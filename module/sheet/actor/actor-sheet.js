@@ -341,7 +341,9 @@ export class MorkBorgActorSheet extends ActorSheet {
       let div = $(`<div class="item-summary">${item.data.data.description}</div>`);
       let props = $(`<div class="item-properties"></div>`);
 
-      props.append(`<span class="tag">Silver ${item.data.data.silver}</span>`);
+      if(item.data.type !== "feature"){
+        props.append(`<span class="tag">Silver ${item.data.data.silver}</span>`);
+      }
 
       // TODO clean this up on the items object
       let strEnc = "";
@@ -376,7 +378,9 @@ export class MorkBorgActorSheet extends ActorSheet {
         }
       }
 
-      props.append(`<span class="tag">Encumbrance ${strEnc}</span>`);
+      if(item.data.type !== "feature"){
+        props.append(`<span class="tag">Encumbrance ${strEnc}</span>`);
+      }
 
       if (item.data.data.isConsumable) {
         props.append(`<span class="tag">Usage Die ${item.data.data.usageDie} ${item.data.data.usageDieType}</span>`);
