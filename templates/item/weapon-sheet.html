@@ -1,0 +1,78 @@
+<form class="{{cssClass}}" autocomplete="off">
+
+    {{!-- header --}}
+    {{> "systems/morkborg/templates/item/parts/item-header.html"}}
+    
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+        {{!-- Description Tab --}}
+        {{> "systems/morkborg/templates/item/parts/item-description.html"}}
+
+        {{!-- Attributes Tab --}}
+        <div class="tab attributes" data-group="primary" data-tab="attributes">
+            <h2>{{ localize "MB.ItemWeaponDetails" }}</h2>
+
+            <div>
+                <label>{{ localize "MB.ItemWeaponDamage" }}</label>
+                <div class="grid grid-2col">
+                    <div>
+                        <label>{{ localize "MB.ItemDice" }}</label>
+                        <input type="text" name="data.damageDice" value="{{data.damageDice}}" data-dtype="String"/>
+                    </div>
+                    <div>
+                        <label>{{ localize "MB.ItemType" }}</label>
+                        <select name="data.damageType" data-type="String">
+                        {{#select data.damageType}}
+                            {{#each config.damageTypes as |value key|}}
+                            <option value="{{key}}">{{localize value}}</option>
+                            {{/each}}
+                        {{/select}}
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <label>{{ localize "MB.ItemWeaponHands" }}</label>
+                <input type="text" name="data.hands" value="{{data.hands}}" data-dtype="String"/>
+            </div>
+
+            <div>
+                <label>{{ localize "MB.ItemRange" }}</label>
+                <div class="grid grid-2col">
+                    <div>
+                        <label>{{ localize "MB.ItemType" }}</label>
+                        <select name="data.rangeType" data-type="String">
+                        {{#select data.rangeType}}
+                            {{#each config.rangeTypes as |value key|}}
+                            <option value="{{key}}">{{localize value}}</option>
+                            {{/each}}
+                        {{/select}}
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>{{ localize "MB.ItemDistance" }}</label>
+                        <select name="data.rangeDistance" data-type="String">
+                        {{#select data.rangeDistance}}
+                            {{#each config.distanceUnits as |value key|}}
+                            <option value="{{key}}">{{localize value}}</option>
+                            {{/each}}
+                        {{/select}}
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                {{!-- Consumable --}}
+                {{> "systems/morkborg/templates/item/parts/item-consumable.html"}}
+            </div>
+            <div>
+                {{!-- Light --}}
+                {{> "systems/morkborg/templates/item/parts/item-light.html"}}
+            </div>
+        </div>
+    </section>
+</form>

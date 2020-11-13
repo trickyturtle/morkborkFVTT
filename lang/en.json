@@ -1,0 +1,93 @@
+{
+    "MB.AbilityPre": "Presence",
+    "MB.AbilityTou": "Toughness",
+    "MB.AbilityAgi": "Agility",
+    "MB.AbilityStr": "Strength",
+
+    "MB.ItemName": "Item Name",
+    
+    "MB.FeatureName": "Feature Name",
+    "MB.FeatureDescription": "Feature Description",
+
+    "MB.ArmorShield": "Shield",
+    "MB.ArmorLight": "Light Armor",
+    "MB.ArmorMedium": "Medium Armor",
+    "MB.ArmorHeavy": "Heavy Armor",
+
+    "MB.CurrencyGP": "Gold",
+    "MB.CurrencySP": "Silver",
+    "MB.CurrencyCP": "Copper",
+
+    "MB.None": "None",
+
+    "MB.DistSelf": "Self",
+    "MB.DistTouch": "Touch",
+    "MB.DistClose": "Close",
+    "MB.DistFar": "Far Away",
+    "MB.DistNearby": "Nearby",
+
+    "MB.ScrollUnclean": "Unclean",
+    "MB.ScrollSacred": "Sacred",
+    "MB.ScrollOther": "Other",
+
+    "MB.ItemWeaponDetails": "Weapon Details",
+    "MB.ItemArmorDetails": "Armor Details",
+    "MB.ItemGearDetails": "Gear Details",
+    "MB.ItemScrollDetails": "Scroll Details",
+    "MB.ItemFeatureDetails": "Feature Details",
+    "MB.ItemAmmoDetails": "Ammo Details",
+
+    "MB.WeaponTypeMelee": "Melee",
+    "MB.WeaponTypeRanged": "Ranged",
+    "MB.WeaponTypeBoth": "Both",
+
+    "MB.DamageBludgeoning": "Bludgeoning",
+    "MB.DamagePiercing": "Piercing",
+    "MB.DamageSlashing": "Slashing",
+    "MB.DamageMagical": "Magical",
+
+    "MB.ItemWeaponDamage": "Damage",
+    "MB.ItemWeaponHands": "Hands",
+    "MB.ItemRange": "Range",
+    "MB.ItemType": "Type",
+    "MB.ItemDice": "Dice",
+    "MB.ItemDistance": "Distance",
+    "MB.ItemConsumable": "Consumable",
+
+    "MB.ItemWeight": "Weight",
+    "MB.ItemSacks": "Sacks",
+    "MB.ItemStones": "Stones",
+    "MB.ItemSoaps": "Soaps",
+    "MB.ItemSilver": "Silver",
+    "MB.ItemDescription": "Description",
+    "MB.ItemAttributes": "Attributes",
+    "MB.ItemLight": "Gives off Light",
+    "MB.ItemLightRadius": "Radius",
+    "MB.ItemLightStrength": "Strength",
+
+    "MB.ItemArmorTier": "Tier",
+    "MB.ItemArmorDamageReductionDice": "Damage Reduction",
+    "MB.ItemArmorAgilityPenalty": "Agility Penalty",
+    "MB.ItemArmorDefencePenalty": "Defence Penalty",
+     
+    "MB.ScrollType": "Scroll Type",
+
+    "MB.ItemQuantity": "Quantity",
+
+    "MB.ClassSourceCustom": "Custom",
+    "MB.ClassSourceCore": "Core",
+    "MB.ClassSourceMbc": "MBC",
+    "MB.ClassSource": "Source",
+    "MB.ClassStartingHP": "Starting Hit Points",
+    "MB.ClassStartingSilver": "Starting Silver",
+    "MB.ClassOmensDice": "Omens Dice",
+    "MB.ClassCanUseScrolls": "Can Use Scrolls",
+    "MB.ClassAbilityMods": "Ability Modifiers",
+    "MB.ClassStartingEQ": "Starting Equipment",
+    "MB.ClassWeaponTableDice": "Weapon Dice",
+    "MB.ClassArmorTableDice": "Armor Dice",
+
+    "MB.ClassFeatures": "Class Features",
+    "MB.ClassOrigins": "Origins"
+}
+    

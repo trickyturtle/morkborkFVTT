@@ -1,0 +1,1477 @@
+[
+    {
+        "name": "Bear trap",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "PRESENCE DR14 to spot, d8 damage",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 20,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Bedroll, Blanket",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "A night's rest heals at +1",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 4,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Caltrops",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "d4 damage + infection on 1 in 6",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 1
+            },
+            "silver": 7,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/caltrop.jpg"
+    },
+    {
+        "name": "Chalk",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 1
+            },
+            "silver": 1,
+            "usageDie": "Ud8",
+            "quantity": 1,
+            "usageDieType": "uses",
+            "isConsumable": true,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Pipe & tobacco",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 1
+            },
+            "silver": 1,
+            "usageDie": "Ud6",
+            "quantity": 1,
+            "usageDieType": "uses",
+            "isConsumable": true,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/pipe.jpg"
+    },
+    {
+        "name": "Crowbar",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "Damage as a club (1d6)",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 8,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Crucifix, silver",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 1
+            },
+            "silver": 60,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Crucifix, wood",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 1
+            },
+            "silver": 8,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Exquisite perfume",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 1
+            },
+            "silver": 25,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/bottle-empty.jpg"
+    },
+    {
+        "name": "Firesteel",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 1
+            },
+            "silver": 4,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Grappling hook",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 12,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Hammer",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 8,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/hammer.jpg"
+    },
+    {
+        "name": "Heavy chain",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "15 feet",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 10,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/chain.jpg"
+    },
+    {
+        "name": "Iron nails",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "10 nails",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 1
+            },
+            "silver": 5,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Ladder",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 2,
+                "soaps": 0
+            },
+            "silver": 7,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Lock",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 1
+            },
+            "silver": 55,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/lock.jpg"
+    },
+    {
+        "name": "Large iron hook",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 9,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/tool-hook.jpg"
+    },
+    {
+        "name": "Lockpicks",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 1
+            },
+            "silver": 5,
+            "usageDie": "Ud12",
+            "quantity": 1,
+            "usageDieType": "uses",
+            "isConsumable": true,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/lockpick.jpg"
+    },
+    {
+        "name": "Magnesium strip",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 1
+            },
+            "silver": 4,
+            "usageDie": "Ud4",
+            "quantity": 1,
+            "usageDieType": "uses",
+            "isConsumable": true,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Manacles",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 10,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Meat cleaver",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "Damage as an axe (d6)",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 15,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Medicine bag",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "Stops bleeding/infection and +d6 HP.",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 5
+            },
+            "silver": 15,
+            "usageDie": "Ud6",
+            "quantity": 1,
+            "usageDieType": "uses",
+            "isConsumable": true,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/herb-bag.jpg"
+    },
+    {
+        "name": "Metal file",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 1
+            },
+            "silver": 10,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Mirror",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 1
+            },
+            "silver": 15,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Poison (black)",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "TOUGHNESS DR14 or d6 damage + blind for one hour.",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 5
+            },
+            "silver": 20,
+            "usageDie": "Ud4",
+            "quantity": 1,
+            "usageDieType": "uses",
+            "isConsumable": true,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/bottle-empty.jpg"
+    },
+    {
+        "name": "Poison (red)",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "TOUGHNESS DR12 or d10 damage.",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 5
+            },
+            "silver": 20,
+            "usageDie": "Ud4",
+            "quantity": 1,
+            "usageDieType": "uses",
+            "isConsumable": true,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/bottle-empty.jpg"
+    },
+    {
+        "name": "Rope",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "30 feet",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 4,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/rope.jpg"
+    },
+    {
+        "name": "Tent",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "A night's rest heals at +1",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 12,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Toolbox",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "10 nails, hammer, small saw, tongs",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 2,
+                "soaps": 0
+            },
+            "silver": 20,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Salt",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 1
+            },
+            "silver": 4,
+            "usageDie": "Ud8",
+            "quantity": 1,
+            "usageDieType": "uses",
+            "isConsumable": true,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Scissors",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 1
+            },
+            "silver": 9,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Sharp needle",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 1
+            },
+            "silver": 3,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Bomb",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "Sealed Bottle, d10 Damage",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 5
+            },
+            "silver": null,
+            "usageDie": null,
+            "quantity": 20,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/bomb.jpg"
+    },
+    {
+        "name": "10ft Pole",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 2,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Net",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 4,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/net.jpg"
+    },
+    {
+        "name": "Tinderbox",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 5
+            },
+            "silver": 2,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Shovel",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 6,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Fishing Rod",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 5,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Grease",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 1
+            },
+            "silver": 2,
+            "usageDie": "Ud6",
+            "quantity": 1,
+            "usageDieType": "uses",
+            "isConsumable": true,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Card deck and Dice",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 5
+            },
+            "silver": 15,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/dice.jpg"
+    },
+    {
+        "name": "Life Elixir",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "Heals d6 HP And Removes Infection",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 5
+            },
+            "silver": 100,
+            "usageDie": "Ud6",
+            "quantity": 1,
+            "usageDieType": "doses",
+            "isConsumable": true,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/bottle-empty.jpg"
+    },
+    {
+        "name": "Bucket",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 5,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Pick",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "1d4 damage",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 8,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/pickaxe.jpg"
+    },
+    {
+        "name": "Cook Pots",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "Whole group heals at +1 on long rests",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 10,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Whistle",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 1
+            },
+            "silver": 20,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Spyglass",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 100,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Twine",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "20 ft",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 1
+            },
+            "silver": 2,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Marbles",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 1
+            },
+            "silver": 5,
+            "usageDie": null,
+            "quantity": 20,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Flute",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 5
+            },
+            "silver": 25,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/flute.jpg"
+    },
+    {
+        "name": "Lute",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 225,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/lute.jpg"
+    },
+    {
+        "name": "Horn",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 15,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/horn.jpg"
+    },
+    {
+        "name": "Horseshoe",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 5
+            },
+            "silver": 2,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/horseshoe.jpg"
+    },
+    {
+        "name": "Paper",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 1
+            },
+            "silver": 25,
+            "usageDie": null,
+            "quantity": 10,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/paper.jpg"
+    },
+    {
+        "name": "Soap",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 1
+            },
+            "silver": 2,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/soap.jpg"
+    },
+    {
+        "name": "Supplies, Basic (One Day)",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "Food and Water for one day.",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 2,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/bread.jpg"
+    },
+    {
+        "name": "Supplies, Basic (wk)",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "Hearty bread, water, hempen cloth, and wrapping rags. ",
+            "encumbrance": {
+                "sacks": 1,
+                "stones": 0,
+                "soaps": 0
+            },
+            "silver": 14,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/bread.jpg"
+    },
+    {
+        "name": "Supplies, Voyager (wk)",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "Tinned meat, travel ale, disinfectant schnapps, novelty items, rough newspapers, tents, and prophylactics.+1 to healing and recovery.",
+            "encumbrance": {
+                "sacks": 1,
+                "stones": 0,
+                "soaps": 0
+            },
+            "silver": 28,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/bread.jpg"
+    },
+    {
+        "name": "Curative Snake Oil",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "Generic remedies against venom, bugs, parasites, diseases, rashes, and blisters. Surprisingly, it actually works.",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 1
+            },
+            "silver": 10,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/bottle-empty.jpg"
+    },
+    {
+        "name": "Light (One Day)",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "Lamp and oil, Firewood, or torches",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 1,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/gear/lantern.jpg"
+    }
+]

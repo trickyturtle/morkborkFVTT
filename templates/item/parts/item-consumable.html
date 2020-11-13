@@ -1,0 +1,7 @@
+<label>{{ localize "MB.ItemConsumable" }}</label>
+<input type="checkbox" name="data.isConsumable" {{checked data.isConsumable}}>
+{{#if data.isConsumable}}
+<div class="item-group">
+    <input type="text" name="data.usageDie" value="{{data.usageDie}}" data-dtype="String"/>
+</div>
+{{/if}}

@@ -1,0 +1,102 @@
+[
+    {
+        "name": "Shield",
+        "permission": {
+            "default": 0
+        },
+        "type": "armor",
+        "data": {
+            "description": "<p>You can choose to ignore all damage from one attack but shield breaks.</p>",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "tier": 0,
+            "silver": 20,
+            "damageReductionDice": "1d1",
+            "agilityPenalty": 0,
+            "defencePenalty": 0,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/armor/shield.png"
+    },
+    {
+        "name": "Light Armor",
+        "permission": {
+            "default": 0
+        },
+        "type": "armor",
+        "data": {
+            "description": "<p>(fur, padded cloth, leather, etc...)</p>",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "tier": 1,
+            "silver": 20,
+            "damageReductionDice": "1d2",
+            "agilityPenalty": 0,
+            "defencePenalty": 0,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/armor/leather.png"
+    },
+    {
+        "name": "Medium Armor",
+        "permission": {
+            "default": 0
+        },
+        "type": "armor",
+        "data": {
+            "description": "<p>(scale, mail, etc...) Scrolls will never work when wearing medium armor.</p>",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 2,
+                "soaps": 0
+            },
+            "tier": 2,
+            "silver": 100,
+            "damageReductionDice": "1d4",
+            "agilityPenalty": 2,
+            "defencePenalty": 2,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/armor/scale.png"
+    },
+    {
+        "name": "Heavy Armor",
+        "permission": {
+            "default": 0
+        },
+        "type": "armor",
+        "data": {
+            "description": "<p>(splint, plate, etc...) Scrolls will never work when wearing heavy armor.</p>",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 3,
+                "soaps": 0
+            },
+            "tier": 3,
+            "silver": 200,
+            "damageReductionDice": "1d6",
+            "agilityPenalty": 4,
+            "defencePenalty": 2,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/armor/plate.png"
+    }
+]

@@ -1,0 +1,19 @@
+.item-sheet {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "left-column header header" "left-column content content" "left-column content content";
+    
+    .left-column { 
+        grid-area: left-column; 
+    }
+  
+    .header { 
+        grid-area: header; 
+    }
+    
+    .content { 
+        grid-area: content; 
+    }
+}

@@ -1,0 +1,102 @@
+{
+  "name": "morkborg",
+  "title": "Mork Borg",
+  "description": "A Mork Borg system for FoundryVTT with homebrew content.",
+  "version": "0.0.1",
+  "compatibleCoreVersion": "0.7.5",
+  "minimumCoreVersion": "0.6.0",
+  "templateVersion": 2,
+  "author": "David Alexander",
+  "esmodules": ["morkborg.js"],
+  "styles": ["css/morkborg.css"],
+  "scripts": [],
+  "packs": [
+    {
+      "name": "gear",
+      "label": "Gear",
+      "system": "morkborg",
+      "module": "morkborg",
+      "path": "./packs/gear.db",
+      "entity": "Item"
+    },
+    {
+      "name": "features",
+      "label": "Features",
+      "system": "morkborg",
+      "module": "morkborg",
+      "path": "./packs/features.db",
+      "entity": "Item"
+    },
+    {
+      "name": "armor",
+      "label": "Armor",
+      "system": "morkborg",
+      "module": "morkborg",
+      "path": "./packs/armor.db",
+      "entity": "Item"
+    },
+    {
+      "name": "weapons",
+      "label": "Weapons",
+      "system": "morkborg",
+      "module": "morkborg",
+      "path": "./packs/weapon.db",
+      "entity": "Item"
+    },
+    {
+      "name": "scrolls",
+      "label": "Scrolls",
+      "system": "morkborg",
+      "module": "morkborg",
+      "path": "./packs/scrolls.db",
+      "entity": "Item"
+    },
+    {
+      "name": "classes",
+      "label": "Classes",
+      "system": "morkborg",
+      "module": "morkborg",
+      "path": "./packs/classes.db",
+      "entity": "Item"
+    },
+    {
+      "name": "bestiary",
+      "label": "Bestiary",
+      "system": "morkborg",
+      "module": "morkborg",
+      "path": "./packs/bestiary.db",
+      "entity": "Actor"
+    },
+    {
+      "name": "macros",
+      "label": "Macros",
+      "system": "morkborg",
+      "module": "morkborg",
+      "path": "./packs/macros.db",
+      "entity": "Macro"
+    },
+    {
+      "name": "tables",
+      "label": "Tables",
+      "system": "morkborg",
+      "module": "morkborg",
+      "path": "./packs/tables.db",
+      "entity": "RollTable"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "gridDistance": 5,
+  "gridUnits": "ft",
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": null,
+  "url": null,
+  "manifest": null,
+  "download": null,
+  "license": null
+}

@@ -1,0 +1,133 @@
+.items-list {
+  list-style: none;
+  margin: 7px 0;
+  padding: 0 5px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+
+  .item {
+    line-height: 30px;
+    padding: 0 2px; // to align with the header border
+    border-bottom: 1px solid $mb-faint;
+    &:last-child { border-bottom: none; }
+
+    // Item Header Name
+    .item-name {
+      cursor: pointer;
+      max-height: 30px;
+      overflow: hidden;
+
+      .item-image {
+        flex: 0 0 30px;
+        background-size: 30px;
+        margin-right: 5px;
+      }
+
+      h4 {
+        margin: 0;
+        white-space: nowrap;
+        overflow-x: hidden;
+      }
+    }
+
+    // Item Dropdown Properties
+    .item-properties {
+      margin-top: 3px;
+    }
+
+    .action {
+      color: $mb-pink;
+      &:hover,
+      &:focus {
+        color: $mb-white;
+        text-shadow: 0 0 10px $mb-pink;
+        cursor: pointer;
+      }
+    }
+  }
+
+  // item Header
+  .item-header {
+    color: $mb-yellow;
+    background-color: #ffffff18;
+    margin: 2px 0;
+    padding: 0;
+    border: 2px groove $mb-faint;
+    font-weight: bold;
+    
+  
+    .item-image {
+      flex: 0 0 30px;
+      margin-right: 5px;
+    }
+
+    img {
+      display: block;
+      border: none;
+    }
+
+    .item-detail {
+      align-self: center;
+    }
+
+    h3 {
+      padding-left: 5px;
+      font-family: $font-tertiary;
+      margin: 0px;
+      align-self: center;
+    }
+  }
+
+  // Item Detail Sections
+  .item-detail {
+    flex: 0 0 70px;
+    font-size: 12px;
+    color: $mb-white;
+    text-align: center;
+    border-right: 1px solid $mb-faint;
+    word-break: break-word;
+    white-space: nowrap;
+    overflow: hidden;
+
+    &:last-child { border-right: none; }
+  }
+
+  // Item Control Buttons
+  .item-controls {
+    flex: 0 0 55px;
+    text-align: right;
+    align-self: center;
+    padding-right: 10px;
+    
+    a {
+      color: $mb-pink;
+      &:hover,
+      &:focus {
+        color: $mb-white;
+        text-shadow: 0 0 10px $mb-pink;
+        cursor: pointer;
+      }
+    }
+  }
+
+  // Item Dropdown Summary
+  .item-summary {
+    flex: 0 0 100%;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0.25em 0.5em;
+    border-top: 1px solid $mb-faint;
+  }
+
+    /* Tags */
+    .tag {
+      display: inline-block;
+      margin: 0 2px 0 0;
+      padding: 0 3px;
+      font-size: 10px;
+      line-height: 16px;
+      border: 1px solid #999;
+      border-radius: 3px;
+      background: rgba(0, 0, 0, 0.05);
+    }
+}

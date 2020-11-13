@@ -1,0 +1,155 @@
+// Import utilities.
+@import 'utils/typography';
+@import 'utils/colors';
+@import 'utils/mixins';
+@import 'utils/variables';
+@import 'utils/grid';
+
+/* Styles limited to morkborg sheets */
+.morkborg {
+  @import 'components/forms';
+  @import 'components/tabs';
+  @import 'components/items';
+  @import 'components/character';
+
+  .window-content {
+    padding: 0px;
+    background: $mb-black;
+    color: $mb-white;
+  }
+
+  .rollable {
+    color: $mb-pink;
+    &:hover,
+    &:focus {
+      color: $mb-white;
+      text-shadow: 0 0 10px $mb-pink;
+      cursor: pointer;
+    }
+    
+    align-self: center;
+  }
+
+  body {
+    font-family: $font-primary;
+    color: $mb-white;
+  }
+  
+  textarea {
+    background: $mb-black;
+    color: $mb-white;
+    border: 1px solid $mb-yellow;
+  }
+
+  label {
+    font-weight: bold;
+    text-transform: capitalize;
+    align-self: center;
+  }
+  
+  h1 {
+    border-bottom: none;
+    font-family: $font-secondary;
+    font-size: 30px;
+    color: $mb-yellow;
+  }
+  
+  h2 {
+    border-bottom: none;
+    font-family: $font-tertiary;
+    font-size: 15px;
+    color: $mb-yellow;
+    margin-top: 15px;
+  }
+  
+  input {
+    text-align: center;
+    background: $mb-black;
+    color: $mb-white;
+    border: 1px solid $mb-yellow;
+  }
+
+  button {
+    border: 1px solid;
+    color: $mb-white;
+    margin: 0 10px 0;
+    line-height: 30px;
+    font-weight: bold;
+
+    &:hover {
+      background: $mb-white;
+      color: $mb-black;
+      cursor: pointer;
+    }
+  }
+  
+  .defense {
+    background: #00ff4027;
+    border: 1px solid;
+    color: $mb-white;
+    margin: 0 10px 0;
+    line-height: 30px;
+    font-weight: bold;
+
+    &:hover {
+      background: $mb-white;
+      color: $mb-black;
+      cursor: pointer;
+    }
+  }
+
+  .attack {
+    background: #4b1235;
+    border: 1px solid;
+    color: $mb-white;
+    margin: 0 10px 0;
+    line-height: 30px;
+    font-weight: bold;
+
+    &:hover {
+      background: $mb-white;
+      color: $mb-black;
+      cursor: pointer;
+    }
+  }
+  
+  select {
+    height: 25px;
+    background: $mb-black;
+    border: 1px solid $mb-yellow;
+    border-radius: 3px;
+    padding: 0 3px;
+    text-overflow: ellipsis;
+    color: $mb-white;
+  
+    option {
+      margin: 40px;
+      background: $mb-black;
+      color: $mb-white;
+      text-shadow: 0 1px 0 $mb-pink;
+    }
+  }
+
+  /* ----------------------------------------- */
+  /*  TinyMCE                                  */
+  /* ----------------------------------------- */
+  .editor-content:empty:before {
+    content: "This text is editable";
+  }
+
+  .tinymcewrapper {
+    background: white;
+    color: black;
+  }
+  /*
+  suppose you have class MyActorSheet extends ActorSheet {
+  you need to define MyActorSheet._createEditor()
+  (AFK) Anathema (He/Him)[UTC-7]04/11/2020
+  awesome. Clarity achieved.
+
+  _createEditor(target, editorOptions, initialContent) {
+    editorOptions.content_css = "your/css/path.css";
+    return super._createEditor(target, editorOptions, initialContent);
+  });
+  */
+}

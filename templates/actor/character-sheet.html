@@ -1,0 +1,456 @@
+<form class="{{cssClass}}" autocomplete="off">
+
+  <div class="char-sheet">
+    <div class="left-column">
+      <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+      
+      <h1 class="left-column-title">Hit Points</h1>
+      <div class="grid grid-2col">
+        <div class="flex-center">
+          <input class="left-column-input" type="text" name="data.health.value" value="{{data.health.value}}" data-dtype="Number" placeholder="0"/>
+          <h4>Current</h4>
+        </div>
+        <div class="flex-center">
+          <input class="left-column-input" type="text" name="data.health.max" value="{{data.health.max}}" data-dtype="Number" placeholder="10"/>
+          <h4>Max</h4>
+        </div>
+      </div>
+
+      <h1 class="left-column-title">Abilities</h1>
+      {{#each data.abilities as |ability key|}}
+        <div class="ability flexrow flex-left">
+          <label class="mb-label" for="data.abilities.{{key}}.value">{{key}}</label>
+          <div class="flexrow flex-center flex-between">
+            <input class="left-column-input" type="text" name="data.abilities.{{key}}.value" value="{{numberFormat ability.value decimals=0 sign=true}}" data-dtype="Number"/>
+            <span class="rollable" data-roll="d20+@abilities.{{key}}.value" data-label="{{key}}">Roll</span>
+          </div>
+        </div>
+      {{/each}}
+      <span>Defense = AGI | Ranged = PRE</span>
+    </div>
+
+    <div class="header">
+      <div class="grid grid-2col" style="gap: 20px;">
+        <div class="flex-left">
+          <h2 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h2>
+
+          <div class="header-item flexrow flex-between" style="margin-top: 10px;">
+            <label class="mb-label" for="data.omens">Silver:</label> &nbsp;
+            <input class="small-input" type="text" name="data.currency.sp" value="{{data.currency.sp}}" data-dtype="Number" placeholder="Coin"/>
+          </div>
+
+          <div class="header-item flexrow flex-between">
+            <label class="mb-label" for="data.omens">Movement:</label>
+            <input class="small-input" type="text" name="data.movement" value="{{data.movement}}" data-dtype="Number" placeholder="Coin"/>
+          </div>
+
+          <div class="header-item flexrow flex-between">
+            <label class="mb-label" for="data.inventorySlots">Inventory Slots:</label>
+            <span class="small-input">{{data.inventorySlots.value}} / {{data.inventorySlots.max}}</span>
+          </div>
+          
+        </div>
+    
+        <div class="flex-left" style="margin-top: 10px;">
+          <h1 class="left-column-title">Violence</h1>
+          <div class="header-item flexrow flex-between">
+            <button style="margin-left: 0px;" class="rollable flex-center attack" type="button" data-roll="d20+@abilities.strength.value" data-label="Melee Attack">Melee</button>
+            <button class="rollable flex-center attack" type="button" data-roll="d20+@abilities.presence.value" data-label="Ranged Attack">Ranged</button>
+            <button style="margin-right: 0px;" class="rollable flex-center defense" type="button" data-roll="d20+@abilities.agility.value" data-label="Defense">Defense</button>
+          </div>
+            
+          <div class="header-item flexrow flex-between" style="margin-top: 10px;">
+            <label class="mb-label" for="data.powers">Powers:</label>
+            <input class="small-input" type="text" name="data.powers" value="{{data.powers}}" data-dtype="Number" placeholder="Current"/>
+            {{!-- TODO make roll update powers but only if powers are at 0 --}}
+            <span class="rollable flex-center" data-roll="d4+@abilities.presence.value" data-label="Powers">Roll</span>
+          </div>
+
+          <div class="header-item flexrow flex-between">
+            <label class="mb-label" for="data.omens">Omens:</label>
+            <input class="small-input" type="text" name="data.omens" value="{{data.omens}}" data-dtype="Number" placeholder="Current"/>
+            <span class="rollable flex-center" data-roll="{{actor.classObj.data.omensDice}}" data-label="{{actor.classObj.data.omensDice}}">{{actor.classObj.data.omensDice}}</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="main">Class</a>
+        <a class="item" data-tab="features">Features</a>
+        <a class="item" data-tab="items">Items</a>
+        <a class="item" data-tab="scrolls">Scrolls</a>
+        <a class="item" data-tab="description">Character</a>
+      </nav>
+
+      <section class="sheet-body">
+        {{!-- Class Tab --}}
+          
+          <div class="tab class" data-group="primary" data-tab="main">
+            <div class="grid grid-3col flex" style="text-align: center; margin: 20px 20px 0px 20px;">
+            <div>
+              <select name="data.class.name" data-type="String">
+              {{#select data.class.name}}
+                  <option value="">{{localize "MB.None"}}</option>
+                  {{#each actor.classNameList}}
+                  <option value="{{this}}">{{this}}</option>
+                  {{/each}}
+              {{/select}}
+              </select>
+            </div>
+            {{!-- Level --}}
+            <div>
+              <label class="mb-label"  for="data.level.value">Level</label>
+              <input class="small-input" type="text" name="data.level.value" value="{{data.level.value}}" data-dtype="Number"/>
+            </div>
+            {{!-- Experiences --}}
+            <div>
+              <label class="mb-label"  for="data.experiences">Experiences</label>
+              <input class="small-input" type="text" name="data.experiences" value="{{data.experiences}}" data-dtype="Number"/>
+            </div>
+          </div>
+          
+          <div class="class-grid">
+
+            <div class="class-img">
+              <img src="{{actor.classObj.img}}" title="{{actor.classObj.name}}" height="100" width="100"/>
+            </div>
+            
+            <div class="class-abilities">
+              <h2 style="margin-top: 0px;">Ability Modifiers</h2>
+              <div class="grid grid-2col flex">
+                <label class="mb-label">{{ localize "MB.AbilityStr" }}:</label>
+                <span class="class-ability-mod">{{actor.classObj.data.startingInfo.strMod}}</span>
+              </div>
+
+              <div class="grid grid-2col flex">
+                <label class="mb-label">{{ localize "MB.AbilityAgi" }}:</label>
+                <span class="class-ability-mod">{{actor.classObj.data.startingInfo.agiMod}}</span>
+              </div>
+
+              <div class="grid grid-2col flex">
+                <label class="mb-label">{{ localize "MB.AbilityPre" }}:</label>
+                <span class="class-ability-mod">{{actor.classObj.data.startingInfo.preMod}}</span>
+              </div>
+
+              <div class="grid grid-2col flex">
+                <label class="mb-label">{{ localize "MB.AbilityTou" }}:</label>
+                <span class="class-ability-mod">{{actor.classObj.data.startingInfo.touMod}}</span>
+              </div>
+            </div>
+            
+            <div class="class-items">
+              <div class="grid grid-2col flex">
+                <label class="mb-label">Omens Dice</label>
+                <span>{{actor.classObj.data.omensDice}}</span>
+              </div>
+
+              <div class="grid grid-2col flex">
+                <label class="mb-label">Can Use Scrolls</label>
+                <span>{{actor.classObj.data.canUseScrolls}}</span>
+              </div>
+
+              <div class="grid grid-2col flex">
+                <label class="mb-label">{{ localize "MB.ClassWeaponTableDice" }}:</label>
+                <span>{{actor.classObj.data.startingInfo.weaponsDice}}</span>
+              </div>
+
+              <div class="grid grid-2col flex">
+                <label class="mb-label">{{ localize "MB.ClassArmorTableDice" }}:</label>
+                <span>{{actor.classObj.data.startingInfo.armorDice}}</span>
+              </div>
+
+              <div class="grid grid-2col flex">
+                <label class="mb-label">{{ localize "MB.ClassStartingSilver" }}</label>
+                <span>{{actor.classObj.data.startingInfo.startingSilverDice}} x {{actor.classObj.data.startingInfo.startingSilverMod}}</span>
+              </div>
+                
+              <div class="grid grid-2col flex">
+                <label class="mb-label">{{ localize "MB.ClassStartingHP" }}</label>
+                <span>{{actor.classObj.data.startingInfo.startingHitPointDice}} + {{actor.classObj.data.startingInfo.startingHitPointAtt}}</span>
+              </div>
+            </div>
+
+            <div class="class-content">
+              <h2>Description</h2>
+              <span>{{actor.classObj.data.description}}</span>
+      
+              <h2>Class Attributes</h2>
+              <ul>
+              {{#each actor.classObj.data.modifiers}}
+                <li>{{this}}</li>
+              {{/each}}
+              </ul>
+
+              <h2>{{ localize "MB.ClassFeatures" }}</h2>
+              <h3>{{actor.classObj.data.startingInfo.abilities.description}}</h3>
+              {{#each actor.classObj.data.startingInfo.abilities.options}}
+                <div class="grid-container">
+                  <input class="check-box" type="checkbox" id="{{@index}}">
+                  <label class="desc" for="{{@index}}">{{this}}</label>
+                </div>
+              {{/each}}
+
+              <h2>{{ localize "MB.ClassOrigins" }}</h2>
+              <h3>{{actor.classObj.data.startingInfo.origins.description}}</h3>
+              {{#each actor.classObj.data.startingInfo.origins.options}}
+                <div class="grid-container">
+                  <input class="check-box" type="checkbox" id="{{@index}}">
+                  <label class="desc" for="{{@index}}">{{this}}</label>
+                </div>
+              {{/each}}
+
+            </div>
+          </div>
+        </div>
+        {{!-- Features Tab --}}
+          <div class="tab features" data-group="primary" data-tab="features">
+        <!-- Features -->
+          <ol class="items-list">
+            <li class="item-header flexrow">
+              <div class="item-image"><img src="systems/morkborg/icons/ui/catagory-weapons.svg" title="Features" width="30" height="30"/></div>
+              <h3 class="item-name flexrow">Features</h3>
+
+              <div class="item-controls">
+                  <a class="item-control item-create" title='Create feature' data-type="feature">
+                      <i class="fas fa-plus"></i> Add
+                  </a>
+              </div>
+          </li>
+            {{#each actor.features as |item id|}}
+              <li class="item flexrow" data-item-id="{{item._id}}">   
+                  <div class="item-name flexrow rollable">
+                      <div class="item-image" style="background-image: url({{item.img}})"></div>
+                      <h4>
+                          {{item.name~}}
+                      </h4>
+                  </div>
+
+                  <div class="item-controls">
+                      <a class="item-control item-edit" title='ItemEdit'><i class="fas fa-edit"></i></a>
+                      <a class="item-control item-delete" title='ItemDelete'><i class="fas fa-trash"></i></a>
+                  </div>
+              </li>
+            {{/each}}
+          </ol>
+          </div>
+
+        {{!-- Owned Items Tab --}}
+        <div class="tab items" data-group="primary" data-tab="items">
+
+          {{!-- encumbrance --}}
+          {{> "systems/morkborg/templates/actor/parts/actor-encumbrance.html"}}
+          
+          <!-- Weapons -->
+          <ol class="items-list">
+            <li class="item-header flexrow">
+              <div class="item-image"><img src="systems/morkborg/icons/ui/catagory-weapons.svg" title="Weapons" width="30" height="30"/></div>
+              <h3 class="item-name flexrow">Weapons</h3>
+
+              <div class="item-detail">Damage</div>
+              <div class="item-detail">Range</div>
+              <div class="item-detail">Type</div>
+
+              <div class="item-controls">
+                  <a class="item-control item-create" title='Create weapon' data-type="weapon">
+                      <i class="fas fa-plus"></i> Add
+                  </a>
+              </div>
+          </li>
+            {{#each actor.weapons as |item id|}}
+              <li class="item flexrow" data-item-id="{{item._id}}">   
+                  <div class="item-name flexrow rollable">
+                      <div class="item-image" style="background-image: url({{item.img}})"></div>
+                      <h4>
+                          {{item.name~}}
+                      </h4>
+                  </div>
+
+                  <div class="item-detail action">
+                      {{item.data.damageDice}}
+                  </div>
+
+                  <div class="item-detail">
+                      {{item.data.rangeType}}
+                  </div>
+
+                  <div class="item-detail">
+                      {{item.data.damageType}}
+                  </div>
+
+                  <div class="item-controls">
+                      <a class="item-control item-edit" title='ItemEdit'><i class="fas fa-edit"></i></a>
+                      <a class="item-control item-delete" title='ItemDelete'><i class="fas fa-trash"></i></a>
+                  </div>
+              </li>
+            {{/each}}
+          </ol>
+
+          <!-- Armor -->
+          <ol class="items-list">
+            <li class="item-header flexrow">
+              <div class="item-image"><img src="systems/morkborg/icons/ui/catagory-armor.svg" title="Armor" width="30" height="30"/></div>
+              <h3 class="item-name flexrow">Armor</h3>
+
+              <div class="item-detail">Tier</div>
+              <div class="item-detail">Dice</div>
+              <div class="item-detail">AGI</div>
+              <div class="item-detail">DEF</div>
+
+              <div class="item-controls">
+                  <a class="item-control item-create" title='Create armor' data-type="armor">
+                      <i class="fas fa-plus"></i> Add
+                  </a>
+              </div>
+          </li>
+            {{#each actor.armors as |item id|}}
+              <li class="item flexrow" data-item-id="{{item._id}}">   
+                  <div class="item-name flexrow rollable">
+                      <div class="item-image" style="background-image: url({{item.img}})"></div>
+                      <h4>
+                          {{item.name~}}
+                      </h4>
+                  </div>
+
+                  <div class="item-detail">
+                      {{item.data.tier}}
+                  </div>
+
+                  <div class="item-detail action">
+                      {{item.data.damageReductionDice}}
+                  </div>
+
+                  <div class="item-detail">
+                      {{item.data.agilityPenalty}}
+                  </div>
+
+                  <div class="item-detail">
+                      {{item.data.defencePenalty}}
+                  </div>
+
+                  <div class="item-controls">
+                      <a class="item-control item-edit" title='ItemEdit'><i class="fas fa-edit"></i></a>
+                      <a class="item-control item-delete" title='ItemDelete'><i class="fas fa-trash"></i></a>
+                  </div>
+              </li>
+            {{/each}}
+          </ol>
+
+          <!-- Gear -->
+          <ol class="items-list">
+            <li class="item-header flexrow">
+              <div class="item-image"><img src="systems/morkborg/icons/ui/catagory-gear.svg" title="Gear" width="30" height="30"/></div>
+              <h3 class="item-name flexrow">Gear</h3>
+
+              <div class="item-detail">Qty</div>
+              <div class="item-detail">Weight</div>
+              <div class="item-detail">Usage</div>
+              <div class="item-detail">Silver</div>
+
+              <div class="item-controls">
+                  <a class="item-control item-create" title='Create Gear' data-type="gear">
+                      <i class="fas fa-plus"></i> Add
+                  </a>
+              </div>
+            </li>
+            {{#each actor.gears as |item id|}}
+              <li class="item flexrow" data-item-id="{{item._id}}">   
+                  <div class="item-name flexrow rollable">
+                      <div class="item-image" style="background-image: url({{item.img}})"></div>
+                      <h4>
+                          {{item.name~}}
+                      </h4>
+                  </div>
+
+                  <div class="item-detail">
+                    {{item.data.quantity}}
+                  </div>
+
+                  <div class="item-detail">
+                    {{!-- TODO build an encumbance value on the item --}}
+                    {{#if item.data.encumbrance.sacks}}
+                      {{item.data.encumbrance.sacks}} sack(s)
+                    {{/if}}
+                    {{#if item.data.encumbrance.stones}}
+                      {{item.data.encumbrance.stones}} stone(s)
+                    {{/if}}
+                    {{#if item.data.encumbrance.soaps}}
+                      {{item.data.encumbrance.soaps}} soap(s)
+                    {{/if}}
+                  </div>
+
+                  <div class="item-detail">
+                    {{#if item.data.isConsumable}}
+                      {{item.data.usageDie}} {{item.data.usageDieType}}
+                    {{/if}}
+                  </div>
+
+                  <div class="item-detail">
+                      {{item.data.silver}}
+                  </div>
+
+                  <div class="item-controls">
+                      <a class="item-control item-edit" title='ItemEdit'><i class="fas fa-edit"></i></a>
+                      <a class="item-control item-delete" title='ItemDelete'><i class="fas fa-trash"></i></a>
+                  </div>
+              </li>
+            {{/each}}
+          </ol>
+        </div>
+
+        {{!-- Owned Scrolls Tab --}}
+        <div class="tab scrolls" data-group="primary" data-tab="scrolls">
+
+          {{!-- encumbrance --}}
+          {{> "systems/morkborg/templates/actor/parts/actor-encumbrance.html"}}
+          
+          <ol class="items-list">
+            {{#each actor.scrolls as |scrolls scrollType|}}
+              <li class="item-header flexrow">
+                <div class="item-image"><img src="systems/morkborg/icons/ui/catagory-scrolls.svg" title="Scrolls" width="30" height="30"/></div>
+                <h3 class="item-name flexrow">{{scrollType}} Scrolls</h3>
+
+                <div class="item-detail">Silver</div>
+
+                <div class="item-controls">
+                    <a class="item-control item-create" title='Create Scroll' data-type="scroll" data-scroll-type="{{scrollType}}">
+                        <i class="fas fa-plus"></i> Add
+                    </a>
+                </div>
+              </li>
+              {{#each scrolls as |item id|}}
+              <li class="item flexrow" data-item-id="{{item._id}}">
+                <div class="item-name flexrow rollable">
+                    <div class="item-image" style="background-image: url({{item.img}})"></div>
+                    <h4>
+                        {{item.name~}}
+                    </h4>
+                </div>
+
+                <div class="item-detail">
+                    {{item.data.silver}}
+                </div>
+
+                <div class="item-controls">
+                    <a class="item-control item-edit" title='ItemEdit'><i class="fas fa-edit"></i></a>
+                    <a class="item-control item-delete" title='ItemDelete'><i class="fas fa-trash"></i></a>
+                </div>
+              </li>
+              {{/each}}
+            {{/each}}
+          </ol>
+        </div>
+
+        {{!-- Biography Tab --}}
+        <div class="tab description" data-group="primary" data-tab="description">
+          <div style="background:#c5c5c5; color:black; height:100%; margin: 10px;">
+            {{editor content=data.biography target="data.biography" button=true owner=owner editable=editable}}
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+</form>

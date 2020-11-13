@@ -1,0 +1,595 @@
+@import url("https://fonts.googleapis.com/css2?family=Rakkas&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;577&display=swap");
+@font-face {
+  font-family: 'FetteTrumpDeutsch';
+  src: url("../fonts/FetteTrumpDeutsch.ttf") format("truetype");
+}
+
+.grid,
+.grid-2col {
+  display: grid;
+  grid-column: span 2 / span 2;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  padding: 0;
+}
+
+.grid-3col {
+  grid-column: span 3 / span 3;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-4col {
+  grid-column: span 4 / span 4;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-5col {
+  grid-column: span 5 / span 5;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-6col {
+  grid-column: span 5 / span 5;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-7col {
+  grid-column: span 7 / span 7;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.grid-8col {
+  grid-column: span 8 / span 8;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
+.grid-9col {
+  grid-column: span 9 / span 9;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+}
+
+.grid-10col {
+  grid-column: span 10 / span 10;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+}
+
+.grid-11col {
+  grid-column: span 11 / span 11;
+  grid-template-columns: repeat(11, minmax(0, 1fr));
+}
+
+.grid-12col {
+  grid-column: span 12 / span 12;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.flex-group-center,
+.flex-group-left,
+.flex-group-right {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #999;
+}
+
+.flex-group-left {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.flex-group-right {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.flex-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+/* Styles limited to morkborg sheets */
+.morkborg {
+  /* ----------------------------------------- */
+  /*  TinyMCE                                  */
+  /* ----------------------------------------- */
+  /*
+  suppose you have class MyActorSheet extends ActorSheet {
+  you need to define MyActorSheet._createEditor()
+  (AFK) Anathema (He/Him)[UTC-7]04/11/2020
+  awesome. Clarity achieved.
+
+  _createEditor(target, editorOptions, initialContent) {
+    editorOptions.content_css = "your/css/path.css";
+    return super._createEditor(target, editorOptions, initialContent);
+  });
+  */
+}
+
+.morkborg .item-form {
+  font-family: "Inconsolata", "Signika", sans-serif;
+}
+
+.morkborg .sheet-header {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 210px;
+  flex: 0 0 210px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.morkborg .sheet-header .header-fields {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.morkborg .profile-img {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100px;
+  flex: 0 0 100px;
+  height: 200px;
+}
+
+.morkborg .sheet-tabs {
+  -webkit-box-flex: 0;
+  -ms-flex: 0;
+  flex: 0;
+}
+
+.morkborg .sheet-body,
+.morkborg .sheet-body .tab,
+.morkborg .sheet-body .tab .editor {
+  height: 100%;
+}
+
+.morkborg .mce-content-body {
+  color: white;
+}
+
+.morkborg .mce-content-body p {
+  color: white;
+}
+
+.morkborg .tabs .item {
+  background: rgba(255, 255, 255, 0.125);
+  border: 1px solid;
+  border-radius: 4px;
+  margin: 0 10px 0;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.morkborg .tabs .item:hover, .morkborg .tabs .item:focus {
+  background: white;
+  color: black;
+}
+
+.morkborg .tabs .item.active {
+  background: #ffe72e;
+  color: black;
+  text-decoration: underline;
+  text-shadow: none;
+}
+
+.morkborg .items-list {
+  list-style: none;
+  margin: 7px 0;
+  padding: 0 5px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  /* Tags */
+}
+
+.morkborg .items-list .item {
+  line-height: 30px;
+  padding: 0 2px;
+  border-bottom: 1px solid #ffffff18;
+}
+
+.morkborg .items-list .item:last-child {
+  border-bottom: none;
+}
+
+.morkborg .items-list .item .item-name {
+  cursor: pointer;
+  max-height: 30px;
+  overflow: hidden;
+}
+
+.morkborg .items-list .item .item-name .item-image {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 30px;
+  flex: 0 0 30px;
+  background-size: 30px;
+  margin-right: 5px;
+}
+
+.morkborg .items-list .item .item-name h4 {
+  margin: 0;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.morkborg .items-list .item .item-properties {
+  margin-top: 3px;
+}
+
+.morkborg .items-list .item .action {
+  color: #f142af;
+}
+
+.morkborg .items-list .item .action:hover, .morkborg .items-list .item .action:focus {
+  color: white;
+  text-shadow: 0 0 10px #f142af;
+  cursor: pointer;
+}
+
+.morkborg .items-list .item-header {
+  color: #ffe72e;
+  background-color: #ffffff18;
+  margin: 2px 0;
+  padding: 0;
+  border: 2px groove #ffffff18;
+  font-weight: bold;
+}
+
+.morkborg .items-list .item-header .item-image {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 30px;
+  flex: 0 0 30px;
+  margin-right: 5px;
+}
+
+.morkborg .items-list .item-header img {
+  display: block;
+  border: none;
+}
+
+.morkborg .items-list .item-header .item-detail {
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.morkborg .items-list .item-header h3 {
+  padding-left: 5px;
+  font-family: "Rakkas", cursive, serif;
+  margin: 0px;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.morkborg .items-list .item-detail {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 70px;
+  flex: 0 0 70px;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  border-right: 1px solid #ffffff18;
+  word-break: break-word;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.morkborg .items-list .item-detail:last-child {
+  border-right: none;
+}
+
+.morkborg .items-list .item-controls {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 55px;
+  flex: 0 0 55px;
+  text-align: right;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding-right: 10px;
+}
+
+.morkborg .items-list .item-controls a {
+  color: #f142af;
+}
+
+.morkborg .items-list .item-controls a:hover, .morkborg .items-list .item-controls a:focus {
+  color: white;
+  text-shadow: 0 0 10px #f142af;
+  cursor: pointer;
+}
+
+.morkborg .items-list .item-summary {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 0.25em 0.5em;
+  border-top: 1px solid #ffffff18;
+}
+
+.morkborg .items-list .tag {
+  display: inline-block;
+  margin: 0 2px 0 0;
+  padding: 0 3px;
+  font-size: 10px;
+  line-height: 16px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.morkborg .char-sheet {
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr 1fr 1fr;
+  grid-template-rows: 180px 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "left-column header header header header" "left-column content content content content" "left-column content content content content" "left-column content content content content";
+  height: 100%;
+}
+
+.morkborg .char-sheet .left-column {
+  grid-area: left-column;
+  border-right: 1px solid #ffe72e;
+  padding: 10px 20px;
+  height: 100%;
+}
+
+.morkborg .char-sheet .left-column .left-column-title {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.morkborg .char-sheet .left-column .left-column-input {
+  min-height: 30px;
+}
+
+.morkborg .char-sheet .header {
+  grid-area: header;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.morkborg .char-sheet .header-item {
+  margin-bottom: 10px;
+}
+
+.morkborg .char-sheet .content {
+  grid-area: content;
+  padding: 10px;
+}
+
+.morkborg .char-sheet .grid-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "check-box desc";
+}
+
+.morkborg .char-sheet .grid-container .check-box {
+  grid-area: check-box;
+}
+
+.morkborg .char-sheet .grid-container .desc {
+  grid-area: desc;
+  margin-bottom: 5px;
+}
+
+.morkborg .ability {
+  margin-bottom: 10px;
+}
+
+.morkborg .mb-label {
+  text-transform: uppercase;
+  font-family: "Rakkas", cursive, serif;
+}
+
+.morkborg .small-input {
+  max-width: 60px;
+}
+
+.morkborg .charname {
+  height: 50px;
+  padding: 0px;
+  margin: 5px 0;
+  border-bottom: none;
+  font-size: 25px;
+}
+
+.morkborg .charname input {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  margin: 0;
+  text-align: left;
+}
+
+.morkborg .class-grid {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 125px 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "class-img class-abilities class-items class-items" "class-content class-content class-content class-content" "class-content class-content class-content class-content";
+  height: 100%;
+}
+
+.morkborg .class-grid .class-content {
+  grid-area: class-content;
+}
+
+.morkborg .class-grid .class-img {
+  grid-area: class-img;
+}
+
+.morkborg .class-grid .class-abilities {
+  grid-area: class-abilities;
+}
+
+.morkborg .class-grid .class-abilities .class-ability-mod {
+  text-align: center;
+}
+
+.morkborg .class-grid .class-items {
+  grid-area: class-items;
+}
+
+.morkborg .window-content {
+  padding: 0px;
+  background: black;
+  color: white;
+}
+
+.morkborg .rollable {
+  color: #f142af;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.morkborg .rollable:hover, .morkborg .rollable:focus {
+  color: white;
+  text-shadow: 0 0 10px #f142af;
+  cursor: pointer;
+}
+
+.morkborg body {
+  font-family: "Inconsolata", "Signika", sans-serif;
+  color: white;
+}
+
+.morkborg textarea {
+  background: black;
+  color: white;
+  border: 1px solid #ffe72e;
+}
+
+.morkborg label {
+  font-weight: bold;
+  text-transform: capitalize;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.morkborg h1 {
+  border-bottom: none;
+  font-family: "FetteTrumpDeutsch", fantasy, serif;
+  font-size: 30px;
+  color: #ffe72e;
+}
+
+.morkborg h2 {
+  border-bottom: none;
+  font-family: "Rakkas", cursive, serif;
+  font-size: 15px;
+  color: #ffe72e;
+  margin-top: 15px;
+}
+
+.morkborg input {
+  text-align: center;
+  background: black;
+  color: white;
+  border: 1px solid #ffe72e;
+}
+
+.morkborg button {
+  border: 1px solid;
+  color: white;
+  margin: 0 10px 0;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.morkborg button:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+.morkborg .defense {
+  background: #00ff4027;
+  border: 1px solid;
+  color: white;
+  margin: 0 10px 0;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.morkborg .defense:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+.morkborg .attack {
+  background: #4b1235;
+  border: 1px solid;
+  color: white;
+  margin: 0 10px 0;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.morkborg .attack:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+.morkborg select {
+  height: 25px;
+  background: black;
+  border: 1px solid #ffe72e;
+  border-radius: 3px;
+  padding: 0 3px;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  color: white;
+}
+
+.morkborg select option {
+  margin: 40px;
+  background: black;
+  color: white;
+  text-shadow: 0 1px 0 #f142af;
+}
+
+.morkborg .editor-content:empty:before {
+  content: "This text is editable";
+}
+
+.morkborg .tinymcewrapper {
+  background: white;
+  color: black;
+}
