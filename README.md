@@ -8,7 +8,7 @@ I believe the original is no longer being updated, and I wanted to make some des
 
 The most significant change between this and Joseph's version is that I have added a compendium for all the class features/abilities, and a tab for holding them on the character sheet, so it is a bit easier to see what your character can do (and to make it possible to have custom characters). Features can be dragged/dropped from the compendium to the character sheet just like weapons, armor, etc. 
 
-BE AWARE, THIS IS A VERY EARLY VERSION AND THERE IS A DISTINCT POSSIBILITY THAT I WILL CHANGE THE TEMPLATE. So you know maybe don't build hundreds of npcs yet, though tbh they are so simple it probably won't matter.
+BE AWARE, THIS IS A VERY EARLY VERSION AND THERE ARE PROBABLY BUGS. So you know maybe don't build hundreds of npcs yet and bank some massive campaign on it, though tbh they are so simple it probably won't matter.
 
 Long term goals:
 1. Add the MBC Feats
@@ -17,7 +17,7 @@ Long term goals:
 
 Known bugs:
 1: The features can't initially be expanded, you have to press the edit button first, then they will expand.
-2: Creating custom features...doesn't really work atm.
+2: You can't install this through Foundry, you will have to download it and put it in your systems folder (probably in C:\Users\USERNAME\AppData\Local\FoundryVTT\Data\systems)
 
 Open an issue (or just message me) if you find any other bugs.
 
