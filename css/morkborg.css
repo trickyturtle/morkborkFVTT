@@ -198,7 +198,7 @@
 }
 
 .morkborg .tabs .item.active {
-  background: #f142af;
+  background: #ffe72e;
   color: black;
   text-decoration: underline;
   text-shadow: none;
@@ -262,7 +262,7 @@
   background-color: #ffffff18;
   margin: 2px 0;
   padding: 0;
-  border: 2px groove grey;
+  border: 2px groove #ffffff18;
   font-weight: bold;
 }
 
@@ -467,7 +467,7 @@
 
 .morkborg .window-content {
   padding: 0px;
-  background: darkgrey;
+  background: black;
   color: white;
 }
 
