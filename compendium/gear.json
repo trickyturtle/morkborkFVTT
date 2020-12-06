@@ -1473,5 +1473,30 @@
         },
         "flags": {},
         "img": "systems/morkborg/icons/items/gear/lantern.jpg"
+    },
+    {
+        "name": "Tamed Rat",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "A tamed rat, 1hp, 1d2 bite",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 0
+            },
+            "silver": 8,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/classes/Cursed_Skinwalker.png"
     }
 ]
