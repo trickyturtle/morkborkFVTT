@@ -17,7 +17,6 @@ Long term goals:
 
 Known bugs:
 1: The features can't initially be expanded, you have to press the edit button first, then they will expand.
-2: You can't install this through Foundry, you will have to download it and put it in your systems folder (probably in C:\Users\USERNAME\AppData\Local\FoundryVTT\Data\systems)
 
 Open an issue (or just message me) if you find any other bugs.
 

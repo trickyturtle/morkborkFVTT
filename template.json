@@ -109,21 +109,53 @@
           "hasLight": false,
           "lightRadius": null,
           "lightStrength": null
+        },
+        "activatedEffect": {
+          "activation": {
+            "type": "",
+            "cost": 0,
+            "condition": ""
+          },
+          "duration": {
+            "value": null,
+            "units": ""
+          },
+          "target": {
+            "value": null,
+            "width": null,
+            "units": "",
+            "type": ""
+          },
+          "range": {
+            "value": null,
+            "long": null,
+            "units": ""
+          },
+          "uses": {
+            "value": 0,
+            "max": 0,
+            "per": null
+          },
+          "consume": {
+            "type": "",
+            "target": null,
+            "amount": null
+          }
         }
       },
       "gear": {
-        "templates": ["base", "consumable", "lightSource"],
+        "templates": ["base", "consumable", "lightSource", "activatedEffect"],
         "quantity": 1
       },
       "feature": {
-        "templates": ["feature"]
+        "templates": ["feature", "activatedEffect"]
       },
       "scroll": {
-        "templates": ["base"],
+        "templates": ["base", "activatedEffect"],
         "scrollType": ""
       },
       "weapon": {
-        "templates": ["base", "consumable", "lightSource"],
+        "templates": ["base", "consumable", "lightSource", "activatedEffect"],
         "damageDice": "",
         "hands": 1,
         "rangeType": "",
@@ -137,7 +169,7 @@
         "damageType": ""
       },
       "armor": {
-        "templates": ["base", "lightSource"],
+        "templates": ["base", "lightSource", "activatedEffect"],
         "tier": null,
         "damageReductionDice": "",
         "agilityPenalty": null,
