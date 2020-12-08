@@ -274,6 +274,138 @@ export class MorkBorgActorSheet extends ActorSheet {
       });
     }
   }
+  /**
+   * Create a macro when a rollable element is dragged
+   * @param {Event} event
+   * @override */
+  _onDragStart (event) {
+    let dragData = null
+
+    // Handle the various draggable elements on the sheet
+    const classes = event.target.classList
+    if (classes.contains('ability')) {
+      // Normal ability rolls and DCC d20 roll under luck rolls
+      const abilityId = event.currentTarget.dataset.ability
+      const rollUnder = (abilityId === 'lck')
+      dragData = {
+        type: 'Ability',
+        actorId: this.actor.id,
+        data: {
+          abilityId: abilityId,
+          rollUnder: rollUnder
+        }
+      }
+    } else if (classes.contains('ability-modifiers')) {
+      // Force d20 + Mod roll over (for non-standard luck rolls) by dragging the modifier
+      const abilityId = event.currentTarget.parentElement.dataset.ability
+      if (abilityId) {
+        dragData = {
+          type: 'Ability',
+          actorId: this.actor.id,
+          data: {
+            abilityId: abilityId,
+            rollUnder: false
+          }
+        }
+      }
+    } else if (classes.contains('init')) {
+      dragData = {
+        type: 'Initiative',
+        actorId: this.actor.id,
+        data: {}
+      }
+    } else if (classes.contains('save')) {
+      dragData = {
+        type: 'Save',
+        actorId: this.actor.id,
+        data: event.currentTarget.dataset.save
+      }
+    } else if (classes.contains('skill-check')) {
+      const skillId = event.currentTarget.parentElement.dataset.skill
+      dragData = {
+        type: 'Skill',
+        actorId: this.actor.id,
+        data: {
+          skillId: skillId,
+          skillName: this.actor.data.data.skills[skillId].label
+        }
+      }
+    } else if (classes.contains('luck-die')) {
+      dragData = {
+        type: 'Luck Die',
+        actorId: this.actor.id,
+        data: {}
+      }
+    } else if (classes.contains('spell-check')) {
+      dragData = {
+        type: 'Spell Check',
+        actorId: this.actor.id,
+        data: {
+          ability: event.currentTarget.parentElement.dataset.ability
+        }
+      }
+    } else if (classes.contains('spell-item')) {
+      const spell = event.currentTarget.dataset.spell
+      const spellItem = this.actor.items.find(i => i.name === spell)
+      let img
+      if (spellItem) {
+        img = spellItem.data.img
+      }
+      dragData = {
+        type: 'Spell Check',
+        actorId: this.actor.id,
+        data: {
+          ability: event.currentTarget.dataset.ability,
+          spell: spell,
+          img: img
+        }
+      }
+    } else if (classes.contains('attack-bonus')) {
+      dragData = {
+        type: 'Attack Bonus',
+        actorId: this.actor.id,
+        data: {}
+      }
+    } else if (classes.contains('action-dice')) {
+      dragData = {
+        type: 'Action Dice',
+        actorId: this.actor.id,
+        data: {
+          die: this.actor.data.data.attributes.actionDice.value
+        }
+      }
+    } else if (classes.contains('weapon-button') || classes.contains('backstab-button')) {
+      const li = event.currentTarget.parentElement
+      const weapon = this.actor.items.get(li.dataset.itemId)
+      dragData = {
+        type: 'Weapon',
+        actorId: this.actor.id,
+        data: {
+          weapon: weapon,
+          slot: li.dataset.itemSlot,
+          backstab: classes.contains('backstab-button')
+        }
+      }
+    } else if (classes.contains('disapproval-range')) {
+      dragData = {
+        type: 'Apply Disapproval',
+        actorId: this.actor.id,
+        data: {}
+      }
+    } else if (classes.contains('disapproval-table')) {
+      dragData = {
+        type: 'Roll Disapproval',
+        actorId: this.actor.id,
+        data: {}
+      }
+    }
+
+    if (dragData) {
+      if (this.actor.isToken) dragData.tokenId = this.actor.token.id
+      event.dataTransfer.setData('text/plain', JSON.stringify(dragData))
+    }
+  }
+
 
   /* -------------------------------------------- */
   /**
@@ -408,11 +540,11 @@ export class MorkBorgActorSheet extends ActorSheet {
 
     // Trigger the item roll
     if ( item.data.type === "scroll" ) {
-      return ui.notifications.warn(`Scrolls cannot be in the rolled yet.`);
+      return ui.notifications.warn(`Scrolls cannot be rolled yet.`);
       // TODO return actor.useScroll(item);
     }
     if ( item.data.type === "gear" ) {
-      return ui.notifications.warn(`Gear cannot be in the rolled yet.`);
+      return ui.notifications.warn(`Gear cannot be rolled yet.`);
       // TODO return actor.useGear(item);
     }
 

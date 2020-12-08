@@ -17,6 +17,14 @@ Long term goals:
 
 Known bugs:
 1: The features can't initially be expanded, you have to press the edit button first, then they will expand.
+2: Most sheet macros aren't drag and drop yet (or don't exist at all yet). This is less a bug and more of a planned enhancement.
+3: Updating tokens often doesn't update the actor. No idea why this is happening, but it's a priority to fix.
+
 
 Open an issue (or just message me) if you find any other bugs.
+
+Recent changes:
+1. Fixed the bug with dice in the format of dx not rolling.
+2. Added crit/fumble highlighting.
+3. Fixed the manifest so the system can be automatically installed/updated through foundry.
 

@@ -5,6 +5,8 @@ import { MorkBorgActorSheet } from "./module/sheet/actor/actor-sheet.js";
 import { MorkBorgItem } from "./module/sheet/item/item.js";
 import { MorkBorgItemSheet } from "./module/sheet/item/item-sheet.js";
 import { preloadHandlebarsTemplates } from "./module/templates.js";
+import * as chat from './chat.js'
+
 
 Hooks.once('init', async function() {
 
@@ -54,10 +56,26 @@ Hooks.once('init', async function() {
   preloadHandlebarsTemplates();
 });
 
-Hooks.once("ready", async function() {
+
+
+/* -------------------------------------------- */
+/*  Post initialization hook                    */
+/* -------------------------------------------- */
+Hooks.once('ready', async function () {
+  // Register system settings - needs to happen after packs are initialised
+  //await registerSystemSettings()
   // Wait to register hotbar drop hook on ready so that modules could register earlier if they want to
   Hooks.on("hotbarDrop", (bar, data, slot) => createMorkBorgMacro(data, slot));
 });
+
+/* -------------------------------------------- */
+/*  Other Hooks                                 */
+/* -------------------------------------------- */
+// Highlight 1's and 20's for all regular rolls
+Hooks.on('renderChatMessage', (app, html, data) => {
+  chat.highlightCriticalSuccessFailure(app, html, data)
+})
+
 
 /* -------------------------------------------- */
 /*  Hotbar Macros                               */

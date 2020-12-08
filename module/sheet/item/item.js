@@ -47,6 +47,18 @@ export class MorkBorgItem extends Item {
   }
 
 /**
+ *Validate dice type. Die types like d4 will break foundry, while 1d4 will not.
+ * @param {String} dieType the die type
+ * @private
+ */
+validateDice(dieType) {
+  if (dieType.startsWith("d")){
+    dieType = "1" + dieType;
+  }
+  return dieType;
+}
+
+/**
  * Handle clickable rolls.
  * @param {Event} event The originating click event
  * @private
@@ -62,10 +74,10 @@ async roll() {
   let roll = null;
   let label = null;
   if (item.type === "armor") {
-    roll = new Roll(itemData.damageReductionDice, actorData);
+    roll = new Roll(this.validateDice(itemData.damageReductionDice), actorData);
     label = `<b>${item.name} Damage Reduction</b>`;
   } else if (item.type === "weapon") {
-    roll = new Roll(itemData.damageDice, actorData);
+    roll = new Roll(this.validateDice(itemData.damageDice), actorData);
     label = `<b>${item.name} Damage</b>`;
   } else {
     // something went wrong

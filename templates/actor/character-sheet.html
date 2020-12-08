@@ -22,7 +22,7 @@
           <label class="mb-label" for="data.abilities.{{key}}.value">{{key}}</label>
           <div class="flexrow flex-center flex-between">
             <input class="left-column-input" type="text" name="data.abilities.{{key}}.value" value="{{numberFormat ability.value decimals=0 sign=true}}" data-dtype="Number"/>
-            <span class="rollable" data-roll="d20+@abilities.{{key}}.value" data-label="{{key}}">Roll</span>
+            <span class="rollable" data-roll="1d20+@abilities.{{key}}.value" data-label="{{key}}">Roll</span>
           </div>
         </div>
       {{/each}}
@@ -54,16 +54,16 @@
         <div class="flex-left" style="margin-top: 10px;">
           <h1 class="left-column-title">Violence</h1>
           <div class="header-item flexrow flex-between">
-            <button style="margin-left: 0px;" class="rollable flex-center attack" type="button" data-roll="d20+@abilities.strength.value" data-label="Melee Attack">Melee</button>
-            <button class="rollable flex-center attack" type="button" data-roll="d20+@abilities.presence.value" data-label="Ranged Attack">Ranged</button>
-            <button style="margin-right: 0px;" class="rollable flex-center defense" type="button" data-roll="d20+@abilities.agility.value" data-label="Defense">Defense</button>
+            <button style="margin-left: 0px;" class="rollable flex-center attack" type="button" data-roll="1d20+@abilities.strength.value" data-label="Melee Attack">Melee</button>
+            <button class="rollable flex-center attack" type="button" data-roll="1d20+@abilities.presence.value" data-label="Ranged Attack">Ranged</button>
+            <button style="margin-right: 0px;" class="rollable flex-center defense" type="button" data-roll="1d20+@abilities.agility.value" data-label="Defense">Defense</button>
           </div>
             
           <div class="header-item flexrow flex-between" style="margin-top: 10px;">
             <label class="mb-label" for="data.powers">Powers:</label>
             <input class="small-input" type="text" name="data.powers" value="{{data.powers}}" data-dtype="Number" placeholder="Current"/>
             {{!-- TODO make roll update powers but only if powers are at 0 --}}
-            <span class="rollable flex-center" data-roll="d4+@abilities.presence.value" data-label="Powers">Roll</span>
+            <span class="rollable flex-center" data-roll="1d4+@abilities.presence.value" data-label="Powers">Roll</span>
           </div>
 
           <div class="header-item flexrow flex-between">

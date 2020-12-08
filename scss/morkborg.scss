@@ -153,3 +153,17 @@
   });
   */
 }
+
+/* ----------------------------------------- */
+/*  Chat Rolls                               */
+/* ----------------------------------------- */
+.dice-roll .dice-total.critical,
+.inline-roll.critical {
+  color: green;
+  font-weight: 900;
+}
+
+.dice-roll .dice-total.fumble,
+.inline-roll.fumble {
+  color: red;
+}
