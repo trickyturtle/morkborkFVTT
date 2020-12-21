@@ -258,7 +258,7 @@
 }
 
 .morkborg .items-list .item-header {
-  color: #ffe72e;
+  color: #ffc815;
   background-color: #ffffff18;
   margin: 2px 0;
   padding: 0;
@@ -360,9 +360,10 @@
 
 .morkborg .char-sheet .left-column {
   grid-area: left-column;
-  border-right: 1px solid #ffe72e;
+  border-right: 1px solid #ffc815;
   padding: 10px 20px;
   height: 100%;
+  background: #292929;
 }
 
 .morkborg .char-sheet .left-column .left-column-title {
@@ -408,6 +409,7 @@
 
 .morkborg .ability {
   margin-bottom: 10px;
+  list-style: none;
 }
 
 .morkborg .mb-label {
@@ -467,12 +469,11 @@
 
 .morkborg .window-content {
   padding: 0px;
-  background: darkgrey;
+  background: #585858;
   color: white;
 }
 
 .morkborg .rollable {
-  color: #f142af;
   -ms-flex-item-align: center;
   align-self: center;
 }
@@ -491,7 +492,7 @@
 .morkborg textarea {
   background: black;
   color: white;
-  border: 1px solid #ffe72e;
+  border: 1px solid #ffc815;
 }
 
 .morkborg label {
@@ -499,28 +500,31 @@
   text-transform: capitalize;
   -ms-flex-item-align: center;
   align-self: center;
+  text-shadow: 0px 0px 10px rgba(0,0,0,0.6);
 }
 
 .morkborg h1 {
   border-bottom: none;
   font-family: "FetteTrumpDeutsch", fantasy, serif;
   font-size: 30px;
-  color: #ffe72e;
+  color: #ffc815;
+  text-shadow: 5px 6px 5px rgba(0,0,0,5);
 }
 
 .morkborg h2 {
   border-bottom: none;
   font-family: "Rakkas", cursive, serif;
-  font-size: 15px;
-  color: #ffe72e;
+  font-size: 20px;
+  color: #ffc815;
   margin-top: 15px;
+  text-shadow: 0px 0px 10px rgba(0,0,0,0.6);
 }
 
 .morkborg input {
   text-align: center;
   background: black;
   color: white;
-  border: 1px solid #ffe72e;
+  border: 1px solid #ffc815;
 }
 
 .morkborg button {
@@ -570,7 +574,7 @@
 .morkborg select {
   height: 25px;
   background: black;
-  border: 1px solid #ffe72e;
+  border: 1px solid #ffc815;
   border-radius: 3px;
   padding: 0 3px;
   -o-text-overflow: ellipsis;

@@ -160,7 +160,10 @@
         "hands": 1,
         "rangeType": "",
         "rangeDistance": "",
-        "damageType": ""
+        "damageType": "",
+        "drBonus": "0",
+        "critRange": 20
+
       },
       "ammo": {
         "templates": ["base", "consumable", "lightSource"],
@@ -172,8 +175,8 @@
         "templates": ["base", "lightSource", "activatedEffect"],
         "tier": null,
         "damageReductionDice": "",
-        "agilityPenalty": null,
-        "defencePenalty": null
+        "agilityPenalty": 0,
+        "defencePenalty": 0
       },
       "class": {
         "source": "custom",
