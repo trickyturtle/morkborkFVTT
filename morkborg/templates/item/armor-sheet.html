@@ -1,0 +1,53 @@
+<form class="{{cssClass}}" autocomplete="off">
+
+    {{!-- header --}}
+    {{> "systems/morkborg/templates/item/parts/item-header.html"}}
+    
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+        {{!-- Description Tab --}}
+        {{> "systems/morkborg/templates/item/parts/item-description.html"}}
+
+        {{!-- Attributes Tab --}}
+        <div class="tab attributes" data-group="primary" data-tab="attributes">
+            <h1>{{ localize "MB.ItemArmorDetails" }}</h1>
+
+            {{!-- Armor Tier --}}
+            <div>
+                <label>{{localize "MB.ItemArmorTier"}}</label>
+                <select name="data.tier">
+                {{#select data.tier}}
+                    {{#each config.armorTier as |value key|}}
+                    <option value="{{key}}">{{localize value}}</option>
+                    {{/each}}
+                {{/select}}
+                </select>
+            </div>
+
+            <div class="item-group">
+                <label style="font-weight: bold;">{{ localize "MB.ItemArmorDamageReductionDice" }}</label>
+                <span> {{data.damageReductionDice}}</span>
+            </div>
+            
+            {{#if data.agilityPenalty}}
+            <div class="item-group">
+                <label style="font-weight: bold;">{{ localize "MB.ItemArmorAgilityPenalty" }}</label>
+                <span> DR +{{data.agilityPenalty}} on Agility tests</span>
+            </div>
+            {{/if}}
+
+            {{#if data.defencePenalty}}
+            <div class="item-group">
+                <label style="font-weight: bold;">{{ localize "MB.ItemArmorDefencePenalty" }}</label>
+                <span> DR +{{data.defencePenalty}} on Defence tests</span>
+            </div>
+            {{/if}}
+
+            <div>
+                {{!-- Light --}}
+                {{> "systems/morkborg/templates/item/parts/item-light.html"}}
+            </div>
+        </div>
+    </section>
+</form>

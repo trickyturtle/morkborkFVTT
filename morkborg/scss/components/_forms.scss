@@ -1,0 +1,40 @@
+.item-form {
+  font-family: $font-primary;
+}
+
+.sheet-header {
+  flex: 0 0 210px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+
+  .header-fields {
+    flex: 1;
+  }
+}
+
+.profile-img {
+  flex: 0 0 100px;
+  height: 200px;
+}
+
+.sheet-tabs {
+  flex: 0;
+}
+
+.sheet-body,
+.sheet-body .tab,
+.sheet-body .tab .editor {
+  height: 100%;
+}
+
+.mce-content-body {
+  color: white;
+
+  p {
+    color: white;
+  }
+}

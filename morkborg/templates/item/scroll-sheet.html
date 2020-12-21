@@ -1,0 +1,28 @@
+<form class="{{cssClass}}" autocomplete="off">
+
+    {{!-- header --}}
+    {{> "systems/morkborg/templates/item/parts/item-header.html"}}
+    
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+        {{!-- Description Tab --}}
+        {{> "systems/morkborg/templates/item/parts/item-description.html"}}
+
+        {{!-- Attributes Tab --}}
+        <div class="tab attributes" data-group="primary" data-tab="attributes">
+            <h1>{{ localize "MB.ItemScrollDetails" }}</h1>
+            
+            <div>
+                <label>{{ localize "MB.ScrollType" }}</label>
+                <select name="data.scrollType" data-type="String">
+                {{#select data.scrollType}}
+                    {{#each config.scrollTypes as |value key|}}
+                    <option value="{{key}}">{{localize value}}</option>
+                    {{/each}}
+                {{/select}}
+                </select>
+            </div>
+        </div>
+    </section>
+</form>

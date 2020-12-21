@@ -1,0 +1,135 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+        <div class="header-fields">
+            <h1 class="charname">
+                <input name="name" type="text" value="{{item.name}}" placeholder="Name"/>
+            </h1>
+            
+            <div class="grid grid-2col">
+              <div>
+                <label>{{ localize "MB.ClassOmensDice" }}</label>
+                <input type="text" name="data.omensDice" value="{{data.omensDice}}" data-dtype="String"/>
+              </div>
+            
+              <div>
+                <label>{{ localize "MB.ClassSource" }}</label>
+                <select name="data.source">
+                {{#select data.source}}
+                    {{#each config.classSources as |value key|}}
+                    <option value="{{key}}">{{localize value}}</option>
+                    {{/each}}
+                {{/select}}
+                </select>
+              </div>
+            </div>
+            
+            <div>
+                <label>{{ localize "MB.ClassStartingHP" }}</label>
+                <div class="grid grid-3col flex-center">
+                    <input type="text" name="data.startingInfo.startingHitPointDice" value="{{data.startingInfo.startingHitPointDice}}" data-dtype="String"/>
+                    <span> + </span>
+
+                    <select name="data.startingInfo.startingHitPointAtt">
+                    {{#select data.startingInfo.startingHitPointAtt}}
+                        {{#each config.abilities as |value key|}}
+                        <option value="{{key}}">{{localize value}}</option>
+                        {{/each}}
+                    {{/select}}
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="description">{{ localize "MB.ItemDescription" }}</a>
+        <a class="item" data-tab="attributes">{{ localize "MB.ItemAttributes" }}</a>
+        <a class="item" data-tab="abilities">{{ localize "MB.ClassAbilities" }}</a>
+        <a class="item" data-tab="origins">{{ localize "MB.ClassOrigins" }}</a>
+    </nav>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+        
+        {{!-- Description Tab --}}
+        {{> "systems/morkborg/templates/item/parts/item-description.html"}}
+
+        {{!-- Attributes Tab --}}
+        <div class="tab attributes" data-group="primary" data-tab="attributes">
+            <div>
+                <label>{{ localize "MB.ClassStartingSilver" }}</label>
+                <div class="grid grid-3col flex-center">
+                    <input type="text" name="data.startingInfo.startingSilverDice" value="{{data.startingInfo.startingSilverDice}}" data-dtype="String"/>
+                    <span> x </span>
+                    <input type="text" name="data.startingInfo.startingSilverMod" value="{{data.startingInfo.startingSilverMod}}" data-dtype="Number"/>
+                </div>
+            </div>
+
+            <div>
+                <label>{{ localize "MB.ClassAbilityMods" }}</label>
+                <div class="grid grid-4col flex-group-right">
+                    <div class="grid grid-2col">
+                        <div>{{ localize "MB.AbilityStr" }}:</div>
+                        <input type="text" name="data.startingInfo.strMod" value="{{data.startingInfo.strMod}}" data-dtype="Number"/>
+                    </div>
+                    <div class="grid grid-2col">
+                        <div>{{ localize "MB.AbilityAgi" }}:</div>
+                        <input type="text" name="data.startingInfo.agiMod" value="{{data.startingInfo.agiMod}}" data-dtype="Number"/>
+                    </div>
+                    <div class="grid grid-2col">
+                        <div>{{ localize "MB.AbilityPre" }}:</div>
+                        <input type="text" name="data.startingInfo.preMod" value="{{data.startingInfo.preMod}}" data-dtype="Number"/>
+                    </div>
+                    <div class="grid grid-2col">
+                        <div>{{ localize "MB.AbilityTou" }}:</div>
+                        <input type="text" name="data.startingInfo.touMod" value="{{data.startingInfo.touMod}}" data-dtype="Number"/>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label>{{ localize "MB.ClassCanUseScrolls" }}</label>
+                <input type="checkbox" name="data.canUseScrolls" {{checked data.canUseScrolls}}>
+            </div>
+            <div>
+                <label>{{ localize "MB.ClassStartingEQ" }}</label>
+                <div class="grid grid-4col flex-group-right">
+                    <div class="grid grid-2col">
+                        <div>{{ localize "MB.ClassWeaponTableDice" }}:</div>
+                        <input type="text" name="data.startingInfo.weaponsDice" value="{{data.startingInfo.weaponsDice}}" data-dtype="String"/>
+                    </div>
+                    <div class="grid grid-2col">
+                        <div>{{ localize "MB.ClassArmorTableDice" }}:</div>
+                        <input type="text" name="data.startingInfo.armorDice" value="{{data.startingInfo.armorDice}}" data-dtype="String"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{!-- Abilities Tab --}}
+        <div class="tab abilities" data-group="primary" data-tab="abilities">
+            <h2>{{data.startingInfo.abilities.description}}</h2>
+            <ol>
+            {{#each data.startingInfo.abilities.options as |value key|}}
+                <li>
+                    <span value="{{key}}">{{value}}</span>
+                </li>    
+            {{/each}}
+            </ol>
+        </div>
+
+        {{!-- Oigins Tab --}}
+        <div class="tab origins" data-group="primary" data-tab="origins">
+            <h2>{{data.startingInfo.origins.description}}</h2>
+            <ol>
+            {{#each data.startingInfo.origins.options as |value key|}}
+                <li>
+                    <span value="{{key}}">{{value}}</span>
+                </li>    
+            {{/each}}
+            </ol>
+        </div>
+        
+    </section>
+</form>

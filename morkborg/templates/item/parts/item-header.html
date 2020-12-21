@@ -1,0 +1,38 @@
+<header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+    
+    <div class="header-fields">
+        <h1>{{itemType}}</h1>
+        <h3 class="charname">
+            <input name="name" type="text" value="{{item.name}}" placeholder="Name"/>
+        </h3>
+        <h2>{{ localize "MB.ItemWeight" }}</h2>
+        <div class="grid grid-3col">
+          <div>
+            <label>{{ localize "MB.ItemSacks" }}</label>
+            <input type="text" name="data.encumbrance.sacks" value="{{data.encumbrance.sacks}}" data-dtype="Number"/>
+          </div>
+          <div>
+            <label>{{ localize "MB.ItemStones" }}</label>
+            <input type="text" name="data.encumbrance.stones" value="{{data.encumbrance.stones}}" data-dtype="Number"/>
+          </div>
+          <div>
+            <label>{{ localize "MB.ItemSoaps" }}</label>
+            <input type="text" name="data.encumbrance.soaps" value="{{data.encumbrance.soaps}}" data-dtype="Number"/>
+          </div>
+        </div>
+        <div class="grid grid-2col">
+          <div>
+            <label>{{ localize "MB.ItemSilver" }}</label>
+            <input type="text" name="data.silver" value="{{data.silver}}" data-dtype="Number"/>
+          </div>
+        </div>
+    </div>
+    
+</header>
+
+{{!-- Sheet Tab Navigation --}}
+<nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="description">{{ localize "MB.ItemDescription" }}</a>
+    <a class="item" data-tab="attributes">{{ localize "MB.ItemAttributes" }}</a>
+</nav>

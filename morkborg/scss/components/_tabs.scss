@@ -1,0 +1,25 @@
+.tabs {
+  // background: rgb(40, 40, 40);
+  
+  .item {
+    background: rgba(255, 255, 255, 0.125);
+    border: 1px solid;
+    border-radius: 4px;
+    margin: 0 10px 0;
+    line-height: 30px;
+    font-weight: bold;
+
+    &:hover,
+    &:focus {
+      background: $mb-white;
+      color: $mb-black;
+    }
+
+    &.active {
+      background: $mb-yellow;
+      color: $mb-black;
+      text-decoration: underline;
+      text-shadow: none;
+    }
+  }
+}

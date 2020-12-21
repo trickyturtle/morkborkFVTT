@@ -1,0 +1,110 @@
+.char-sheet {
+    display: grid;
+    grid-template-columns: 250px 1fr 1fr 1fr 1fr;
+    grid-template-rows: 180px 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "left-column header header header header" "left-column content content content content" "left-column content content content content" "left-column content content content content";
+    height: 100%;
+
+    .left-column { 
+        grid-area: left-column; 
+        border-right: 1px solid $mb-yellow;
+        padding: 10px 20px;
+        height: 100%;
+
+        .left-column-title {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .left-column-input {
+            min-height: 30px;
+        }
+    }
+
+    .header { 
+        grid-area: header; 
+        padding: 10px 20px;
+        text-align: left;
+    }
+
+    .header-item {
+        margin-bottom: 10px;
+    }
+
+    .content { 
+        grid-area: content; 
+        padding: 10px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 1fr;
+        gap: 1px 1px;
+        grid-template-areas: "check-box desc";
+
+        .check-box { 
+            grid-area: check-box; 
+        }
+    
+        .desc { 
+            grid-area: desc; 
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.ability {
+    margin-bottom: 10px;
+}
+
+.mb-label {
+    text-transform: uppercase;
+    font-family: $font-tertiary;
+}
+
+.small-input {
+    max-width: 60px;
+}
+
+.charname {
+    height: 50px;
+    padding: 0px;
+    margin: 5px 0;
+    border-bottom: none;
+    font-size: 25px;
+    input {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        margin: 0;
+        text-align: left;
+    }
+}
+
+.class-grid {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 125px 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "class-img class-abilities class-items class-items" "class-content class-content class-content class-content" "class-content class-content class-content class-content";
+    height: 100%;
+
+    .class-content { 
+        grid-area: class-content;
+    }
+    
+    .class-img { grid-area: class-img; }
+    
+    .class-abilities { 
+        grid-area: class-abilities;
+        
+        .class-ability-mod {
+            text-align: center;
+        }
+    }
+    
+    .class-items { grid-area: class-items; }
+}
