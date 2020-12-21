@@ -18,13 +18,21 @@
 
       <h1 class="left-column-title">Abilities</h1>
       {{#each data.abilities as |ability key|}}
-        <div class="ability flexrow flex-left">
-          <label class="mb-label" for="data.abilities.{{key}}.value">{{key}}</label>
-          <div class="flexrow flex-center flex-between">
-            <input class="left-column-input" type="text" name="data.abilities.{{key}}.value" value="{{numberFormat ability.value decimals=0 sign=true}}" data-dtype="Number"/>
-            <span class="rollable" data-roll="1d20+@abilities.{{key}}.value" data-label="{{key}}">Roll</span>
+        <li class="ability" id="{{key}}" data-ability="{{key}}">
+          <label class="ability-name ability box-title rollable">{{localize ability.label}}</label>
+          <br/>
+          <div class="ability flexrow flex-left">
+            <div class="ability-name mb-label rollable data-roll="1d20+@abilities.{{key}}.value" for="data.abilities.{{key}}.value">{{key}}</div>
+            <div class="flexrow flex-center flex-between"></div>
+            <input class="ability-score left-column-input" id="data.abilities.{{key}}.value"
+                      name="data.abilities.{{key}}.value"
+                      type="text"
+                      value="{{numberFormat ability.value decimals=0 sign=true}}"
+                      data-dtype="Number"
+                      placeholder="0"
+            />
           </div>
-        </div>
+        </li>
       {{/each}}
       <span>Defense = AGI | Ranged = PRE</span>
     </div>

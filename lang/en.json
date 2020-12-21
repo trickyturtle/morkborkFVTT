@@ -88,6 +88,12 @@
     "MB.ClassArmorTableDice": "Armor Dice",
 
     "MB.ClassFeatures": "Class Features",
-    "MB.ClassOrigins": "Origins"
+    "MB.ClassOrigins": "Origins",
+    
+    "MB.WeaponNotFound" : "Weapon Not Found",
+    "MB.AttackRollEmote" : "Attack Roll: {rollHTML} </br>Weapon: {weaponName} </br> Damage: {damageRollHTML}",
+    "MB.AttackCritEmote" : "Crits with {weaponName} for {damageRollHTML} damage!",
+    "MB.AttackFumbleEmote" : "Fumbled and broke their {weaponName} like an idiot",
+    "MB.Check" : "Check"
 }
     
