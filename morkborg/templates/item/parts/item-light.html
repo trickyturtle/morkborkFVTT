@@ -1,0 +1,15 @@
+
+<label>{{ localize "MB.ItemLight" }}</label>
+<input type="checkbox" name="data.hasLight" {{checked data.hasLight}}>
+{{#if data.hasLight}}
+<div class="grid grid-2col item-group">
+    <div>
+        <label>{{ localize "MB.ItemLightRadius" }}</label>
+        <input type="text" name="data.lightRadius" value="{{data.lightRadius}}" data-dtype="String"/>
+    </div>
+    <div>
+        <label>{{ localize "MB.ItemLightStrength" }}</label>
+        <input type="text" name="data.lightStrength" value="{{data.lightStrength}}" data-dtype="String"/>
+    </div>
+</div>
+{{/if}}

@@ -1,0 +1,30 @@
+<form class="{{cssClass}}" autocomplete="off">
+
+    {{!-- header --}}
+    {{> "systems/morkborg/templates/item/parts/item-header.html"}}
+    
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+        {{!-- Description Tab --}}
+        {{> "systems/morkborg/templates/item/parts/item-description.html"}}
+
+        {{!-- Attributes Tab --}}
+        <div class="tab attributes" data-group="primary" data-tab="attributes">
+            <h1>{{ localize "MB.ItemGearDetails" }}</h1>
+            <div class="grid grid-2col">
+                <label>{{ localize "MB.ItemQuantity" }}</label>
+                <input type="text" name="data.quantity" value="{{data.quantity}}" data-dtype="Number"/>
+            </div>
+            
+            <div>
+                {{!-- Consumable --}}
+                {{> "systems/morkborg/templates/item/parts/item-consumable.html"}}
+            </div>
+            <div>
+                {{!-- Light --}}
+                {{> "systems/morkborg/templates/item/parts/item-light.html"}}
+            </div>
+        </div>
+    </section>
+</form>

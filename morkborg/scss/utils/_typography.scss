@@ -1,0 +1,18 @@
+// @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Metamorphous&display=swap');
+// @font-face {
+//     font-family: 'Sebaldus-Gotisch';
+//     src: url("../fonts/Sebaldus-Gotisch.ttf") format('truetype');
+// }
+
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;577&display=swap');
+
+@font-face {
+    font-family: 'FetteTrumpDeutsch';
+    src: url("../fonts/FetteTrumpDeutsch.ttf") format('truetype');
+}
+
+$font-primary: 'Inconsolata', "Signika", sans-serif;
+$font-secondary: 'FetteTrumpDeutsch', fantasy, serif;
+$font-tertiary: 'Rakkas', cursive, serif;

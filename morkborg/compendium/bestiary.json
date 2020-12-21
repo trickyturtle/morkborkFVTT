@@ -1,0 +1,482 @@
+[
+  {
+      "name": "SETH Goblin",
+      "permission": {
+          "default": 0
+      },
+      "type": "npc",
+      "data": {
+          "biography": "All goblins carry a curse. Once like you, they are now trapped in the prison of their crazed goblin flesh. Only their eyes reveal the truth: a ruined mind watching its body-prison perform terrible deeds. Even being attacked by goblins sends the curse, carried on the winds of their hate. Hit or miss, it doesn’t matter. In the dark of Sarkash they shoot at passers-by with twanging bows. You must find and kill the goblin before your mind is paralyzed. If the curse-carrying creature still lives d6 days after the attack, you will warp irrevocably into one yourself. Then, only the dark of Sarkash will hide you.",
+          "movement":20,
+          "health": {
+              "value": 6,
+              "min": 0,
+              "max": 6
+          },
+          "currency": {
+              "gp": null,
+              "sp": 0,
+              "cp": null
+          },
+          "morale": {
+            "value": 7,
+            "min": null,
+            "max": 12
+          },
+          "defence": {
+            "description": "Ropy skin",
+            "defenceDice": "1d2"
+          },
+          "attack": {
+            "description": "Knife/shortbow",
+            "rangeType": "both",
+            "rangeDistance": "close",
+            "damageType": "piercing",
+            "damageDice": "1d4"
+          },
+          "special": "Quick, attacks and defence are DR14."
+      },
+      "flags": {},
+      "img": "systems/morkborg/icons/bestiary/SETH_Goblin.webp"
+  },
+  {
+    "name": "BENT Scum",
+    "permission": {
+        "default": 0
+    },
+    "type": "npc",
+    "data": {
+        "biography": "There are few fiends more fell than poverty or monsters more powerful than hate. In this stricken world, the slums and black alleyways are fecund scum, mothering countless abhorred miscreants. The PC with the highest Presence makes a DR14 test at the start of battle. Failure means a random party member is automatically hit with a cowardly backstab-normal damage +3",
+        "movement":20,
+        "health": {
+            "value": 7,
+            "min": 0,
+            "max": 7
+        },
+        "currency": {
+            "gp": null,
+            "sp": 0,
+            "cp": null
+        },
+        "morale": {
+          "value": 8,
+          "min": null,
+          "max": 12
+        },
+        "defence": {
+          "description": "No armor",
+          "defenceDice": null
+        },
+        "attack": {
+          "description": "Poisoned knife",
+          "rangeType": "melee",
+          "rangeDistance": "close",
+          "damageType": "piercing",
+          "damageDice": "1d4"
+        },
+        "special": "Poisoned knife. Test Toughness DR10 or become infected."
+    },
+    "flags": {},
+    "img": "systems/morkborg/icons/bestiary/BENT_Scum.webp"
+  },
+  {
+    "name": "ZUKUMA Berserker",
+    "permission": {
+        "default": 0
+    },
+    "type": "npc",
+    "data": {
+        "biography": "They’re on you! As if from nowhere, a frenzied ambush in dusty hallways and from behind the stacked black stones of catacombs. Special Attacks twice per round but doesn’t have time for defence (DR10 to hit them).",
+        "movement":20,
+        "health": {
+            "value": 13,
+            "min": 0,
+            "max": 13
+        },
+        "currency": {
+            "gp": null,
+            "sp": 0,
+            "cp": null
+        },
+        "morale": {
+          "value": 9,
+          "min": null,
+          "max": 12
+        },
+        "defence": {
+          "description": "Hardened skin",
+          "defenceDice": "1d2"
+        },
+        "attack": {
+          "description": "",
+          "rangeType": "melee",
+          "rangeDistance": "close",
+          "damageType": "bludgeoning",
+          "damageDice": "1d8"
+        },
+        "special": "Wields (d4) 1. Long flail d8; 2. Heavy mace d6; 3. Chained sword d6; 4. Huge warhammer d10"
+    },
+    "flags": {},
+    "img": "systems/morkborg/icons/bestiary/ZUKUMA_Berserker.webp"
+  },
+  {
+    "name": "WRAT Wraith",
+    "permission": {
+        "default": 0
+    },
+    "type": "npc",
+    "data": {
+        "biography": "These soundless phantoms always win initiative. Their touch drains Strength, Presence and Agility by 1 for the duration of the fight.",
+        "movement":20,
+        "health": {
+            "value": 15,
+            "min": 0,
+            "max": 15
+        },
+        "currency": {
+            "gp": null,
+            "sp": 0,
+            "cp": null
+        },
+        "morale": {
+          "value": null,
+          "min": null,
+          "max": 12
+        },
+        "defence": {
+          "description": "No armor",
+          "defenceDice": null
+        },
+        "attack": {
+          "description": "",
+          "rangeType": "melee",
+          "rangeDistance": "touch",
+          "damageType": "magical",
+          "damageDice": "1d4"
+        },
+        "special": "Swift, elusive and difficult to hit (DR14)."
+    },
+    "flags": {},
+    "img": "systems/morkborg/icons/bestiary/WRAT_Wraith.webp"
+  },
+  {
+    "name": "BELZE Blood-drenched skeleton",
+    "permission": {
+        "default": 0
+    },
+    "type": "npc",
+    "data": {
+        "biography": "Body knuckles d2",
+        "movement":20,
+        "health": {
+            "value": 7,
+            "min": 0,
+            "max": 7
+        },
+        "currency": {
+            "gp": null,
+            "sp": 0,
+            "cp": null
+        },
+        "morale": {
+          "value": 8,
+          "min": null,
+          "max": 12
+        },
+        "defence": {
+          "description": "No armor",
+          "defenceDice": null
+        },
+        "attack": {
+          "description": "Shortsword or knife",
+          "rangeType": "melee",
+          "rangeDistance": "close",
+          "damageType": "slashing",
+          "damageDice": "1d4"
+        },
+        "special": "Skulks about, impossibly soundless. Attacks by surprise. Can mimic voices to lure victims, but can only repeat what it has heard. Attacks on them with piercing weapons are DR14. Any strike doing 5 or more damage destroys the skeleton completely."
+    },
+    "flags": {},
+    "img": "systems/morkborg/icons/bestiary/BELZE_skeleton.webp"
+  },
+  {
+    "name": "LICH Undead (weak) necromancer",
+    "permission": {
+        "default": 0
+    },
+    "type": "npc",
+    "data": {
+        "biography": "No one can use Powers near this anti-magical wound in reality. Every round they can steal the contents of a nearby scroll and use this Power against its owner.",
+        "movement":20,
+        "health": {
+            "value": 15,
+            "min": 0,
+            "max": 15
+        },
+        "currency": {
+            "gp": null,
+            "sp": 0,
+            "cp": null
+        },
+        "morale": {
+          "value": null,
+          "min": null,
+          "max": 12
+        },
+        "defence": {
+          "description": "Barrier (necro)",
+          "defenceDice": "1d4"
+        },
+        "attack": {
+          "description": "Strike",
+          "rangeType": "melee",
+          "rangeDistance": "touch",
+          "damageType": "magical",
+          "damageDice": "1d6"
+        },
+        "special": "Paralyzing touch (Presence DR14 every round to break free)."
+    },
+    "flags": {},
+    "img": "systems/morkborg/icons/bestiary/LICH_Undead.webp"
+  },
+  {
+    "name": "ARBINT Troll",
+    "permission": {
+        "default": 0
+    },
+    "type": "npc",
+    "data": {
+        "biography": "Cowards despite their size. Usually retreat if badly wounded. Never forget who hurt them. They grow larger during the healing process and will definitely come back, stronger than before. Any HP healed is added to their maximum HP. Every time they return, add another d6 to their damage.",
+        "movement":20,
+        "health": {
+            "value": 32,
+            "min": 0,
+            "max": 32
+        },
+        "currency": {
+            "gp": null,
+            "sp": 0,
+            "cp": null
+        },
+        "morale": {
+          "value": null,
+          "min": null,
+          "max": 12
+        },
+        "defence": {
+          "description": "Thick hide",
+          "defenceDice": "1d2"
+        },
+        "attack": {
+          "description": "Fist",
+          "rangeType": "melee",
+          "rangeDistance": "close",
+          "damageType": "bludgeoning",
+          "damageDice": "2d6"
+        },
+        "special": "easy to hit; attacks are DR10."
+    },
+    "flags": {},
+    "img": "systems/morkborg/icons/bestiary/ARBINT_Troll.webp"
+  },
+  {
+    "name": "NODH zombie",
+    "permission": {
+        "default": 0
+    },
+    "type": "npc",
+    "data": {
+        "biography": "King Fathmu IX of Wästland in particular seeks this cure and knows the name and location of the forest which the mountain overlooks.",
+        "movement":20,
+        "health": {
+            "value": 7,
+            "min": 0,
+            "max": 7
+        },
+        "currency": {
+            "gp": null,
+            "sp": 0,
+            "cp": null
+        },
+        "morale": {
+          "value": null,
+          "min": null,
+          "max": 12
+        },
+        "defence": {
+          "description": "Leather scraps",
+          "defenceDice": "1d2"
+        },
+        "attack": {
+          "description": "Claw/bite",
+          "rangeType": "melee",
+          "rangeDistance": "close",
+          "damageType": "slashing",
+          "damageDice": "1d2"
+        },
+        "special": "Anyone bitten tests Toughness DR8 or dies within two days before rising as a zombie. The only cure or vaccine is said to be found at the peak of a pale mountain within an infinitely-miserable forest of dark leaves."
+    },
+    "flags": {},
+    "img": "systems/morkborg/icons/bestiary/NOHD_Zombie.webp"
+  },
+  {
+    "name": "LADY PORCELAIN undead doll",
+    "permission": {
+        "default": 0
+    },
+    "type": "npc",
+    "data": {
+        "biography": "In Tveland relic thieves, defamers and corrupt clerks suffer a punishment of exquisite and deeply impractical cruelty. Their children or grandchildren are enclosed in porcelain dolls then placed in cathedral windows, to die slowly of starvation and heat. Despite warding rituals, many return as vengeful undead, often gathering in large throngs to hunt their tormentors.",
+        "movement":20,
+        "health": {
+            "value": 11,
+            "min": 0,
+            "max": 11
+        },
+        "currency": {
+            "gp": null,
+            "sp": 0,
+            "cp": null
+        },
+        "morale": {
+          "value": null,
+          "min": null,
+          "max": 12
+        },
+        "defence": {
+          "description": "Porcelain",
+          "defenceDice": "1d2"
+        },
+        "attack": {
+          "description": "Claws/piercing bite",
+          "rangeType": "melee",
+          "rangeDistance": "close",
+          "damageType": "piercing",
+          "damageDice": "1d4"
+        },
+        "special": "Their mad gaze demands a Presence DR12 test at the start of combat to avoid being frozen with fear for d4 rounds."
+    },
+    "flags": {},
+    "img": "systems/morkborg/icons/bestiary/LADY_POROCELAIN_Undead_Doll.webp"
+  },
+  {
+    "name": "THINX Grotesque",
+    "permission": {
+        "default": 0
+    },
+    "type": "npc",
+    "data": {
+        "biography": "Lurking round churches, stalking graveyards, creeping closer when you look away. Disturbingly still, difficult to discern against gray stone and hard to recognize even when seen.",
+        "movement":20,
+        "health": {
+            "value": 18,
+            "min": 0,
+            "max": 18
+        },
+        "currency": {
+            "gp": null,
+            "sp": 0,
+            "cp": null
+        },
+        "morale": {
+          "value": null,
+          "min": null,
+          "max": 12
+        },
+        "defence": {
+          "description": "Clay/stone",
+          "defenceDice": "1d6"
+        },
+        "attack": {
+          "description": "Claws",
+          "rangeType": "both",
+          "rangeDistance": "close",
+          "damageType": "slashing",
+          "damageDice": "1d6"
+        },
+        "special": "They move slowly and are easy to hit (DR10). Their terrifying gaze is used on 1–2 on a d6 each round. Always hits (Eye-beam d8)"
+    },
+    "flags": {},
+    "img": "systems/morkborg/icons/bestiary/THINX_Grotesque.webp"
+  },
+  {
+    "name": "ALAND Wickhead knife-wielder",
+    "permission": {
+        "default": 0
+    },
+    "type": "npc",
+    "data": {
+        "biography": "Sneaks up behind its victims, silent as the grave. Skulks around the cities' outskirts and the thickets of Sarkash. 25% chance wounds from the insanely filthy knife become infected.",
+        "movement":20,
+        "health": {
+            "value": 10,
+            "min": 0,
+            "max": 10
+        },
+        "currency": {
+            "gp": null,
+            "sp": 0,
+            "cp": null
+        },
+        "morale": {
+          "value": 7,
+          "min": null,
+          "max": 12
+        },
+        "defence": {
+          "description": "No armor",
+          "defenceDice": null
+        },
+        "attack": {
+          "description": "Knife with dried blood",
+          "rangeType": "melee",
+          "rangeDistance": "close",
+          "damageType": "slashing",
+          "damageDice": "1d4"
+        },
+        "special": "Can magically douse all nearby light sources, ignite its own blinding light and attack. Then vanish into the darkness."
+    },
+    "flags": {},
+    "img": "systems/morkborg/icons/bestiary/ALAND_Wickhead.webp"
+  },
+  {
+    "name": "EULOTHA Wyvern",
+    "permission": {
+        "default": 0
+    },
+    "type": "npc",
+    "data": {
+        "biography": "The tail's venomous sting can paralyze a victim. Test Toughness DR14 to avoid one painful hour of paralysis. Where the Wyvern fly crops die.",
+        "movement":20,
+        "health": {
+            "value": 25,
+            "min": 0,
+            "max": 25
+        },
+        "currency": {
+            "gp": null,
+            "sp": 0,
+            "cp": null
+        },
+        "morale": {
+          "value": 10,
+          "min": null,
+          "max": 12
+        },
+        "defence": {
+          "description": "Thick hide",
+          "defenceDice": "1d4"
+        },
+        "attack": {
+          "description": "Bite/Sting",
+          "rangeType": "melee",
+          "rangeDistance": "close",
+          "damageType": "piercing",
+          "damageDice": "1d6"
+        },
+        "special": "60% chance that she bites."
+    },
+    "flags": {},
+    "img": "systems/morkborg/icons/bestiary/EULOTHA_Wyvern.webp"
+  }
+]

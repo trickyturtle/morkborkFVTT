@@ -1,0 +1,646 @@
+[
+    {
+        "name": "Battle Axe",
+        "permission": {
+            "default": 0
+        },
+        "type": "weapon",
+        "data": {
+            "description": "Versatile (used two-handed deals more damage)",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 35,
+            "usageDie": null,
+            "damageDice": "1d8",
+            "hands": 1,
+            "rangeType": "melee",
+            "rangeDistance": "close",
+            "damageType": "slashing",
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/weapons/axe-battle.png"
+    },
+    {
+        "name": "Bow",
+        "permission": {
+            "default": 0
+        },
+        "type": "weapon",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 25,
+            "usageDie": null,
+            "damageDice": "1d6",
+            "hands": 2,
+            "rangeType": "ranged",
+            "rangeDistance": "far",
+            "damageType": "piercing",
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/weapons/bow-short.jpg"
+    },
+    {
+        "name": "Composite Bow",
+        "permission": {
+            "default": 0
+        },
+        "type": "weapon",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 200,
+            "usageDie": null,
+            "damageDice": "1d8",
+            "hands": 2,
+            "rangeType": "ranged",
+            "rangeDistance": "far",
+            "damageType": "piercing",
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/weapons/bow-long.jpg"
+    },
+    {
+        "name": "Sling",
+        "permission": {
+            "default": 0
+        },
+        "type": "weapon",
+        "data": {
+            "description": "Infinite supply, if stones are around",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 1
+            },
+            "silver": 8,
+            "usageDie": null,
+            "damageDice": "1d4",
+            "hands": 1,
+            "rangeType": "ranged",
+            "rangeDistance": "far",
+            "damageType": "bludgeoning",
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/weapons/sling.jpg"
+    },
+    {
+        "name": "Crossbow",
+        "permission": {
+            "default": 0
+        },
+        "type": "weapon",
+        "data": {
+            "description": "1 action to reload",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 40,
+            "usageDie": null,
+            "damageDice": "1d8",
+            "hands": 2,
+            "rangeType": "ranged",
+            "rangeDistance": "far",
+            "damageType": "piercing",
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/weapons/crossbow.jpg"
+    },
+    {
+        "name": "Heavy Crossbow",
+        "permission": {
+            "default": 0
+        },
+        "type": "weapon",
+        "data": {
+            "description": "1 action to reload, 1 in 4 chance to knockback",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 2,
+                "soaps": 0
+            },
+            "silver": 150,
+            "usageDie": null,
+            "damageDice": "1d10",
+            "hands": 2,
+            "rangeType": "ranged",
+            "rangeDistance": "far",
+            "damageType": "piercing",
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/weapons/crossbow.jpg"
+    },
+    {
+        "name": "Club",
+        "permission": {
+            "default": 0
+        },
+        "type": "weapon",
+        "data": {
+            "description": "A cheap, blunt axe.",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 5,
+            "usageDie": null,
+            "damageDice": "1d6",
+            "hands": 1,
+            "rangeType": "melee",
+            "rangeDistance": "close",
+            "damageType": "bludgeoning",
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/weapons/club.jpg"
+    },
+    {
+        "name": "Flail",
+        "permission": {
+            "default": 0
+        },
+        "type": "weapon",
+        "data": {
+            "description": "Swingy and hitty. A symbol of chaos.",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 35,
+            "usageDie": null,
+            "damageDice": "1d8",
+            "hands": 1,
+            "rangeType": "melee",
+            "rangeDistance": "close",
+            "damageType": "bludgeoning",
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/weapons/flail.png"
+    },
+    {
+        "name": "Femur",
+        "permission": {
+            "default": 0
+        },
+        "type": "weapon",
+        "data": {
+            "description": "Worthless",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 0,
+            "usageDie": null,
+            "damageDice": "1d4",
+            "hands": 1,
+            "rangeType": "melee",
+            "rangeDistance": "close",
+            "damageType": "bludgeoning",
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/weapons/femur.jpg"
+    },
+    {
+        "name": "Handaxe",
+        "permission": {
+            "default": 0
+        },
+        "type": "weapon",
+        "data": {
+            "description": "Combine with a shield for best effect.",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 15,
+            "usageDie": null,
+            "damageDice": "1d6",
+            "hands": 1,
+            "rangeType": "melee",
+            "rangeDistance": "close",
+            "damageType": "slashing",
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/weapons/axe-hand.jpg"
+    },
+    {
+        "name": "Dagger, Knife",
+        "permission": {
+            "default": 0
+        },
+        "type": "weapon",
+        "data": {
+            "description": "Strength or Agility, throwing (near)",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 10,
+            "usageDie": null,
+            "damageDice": "1d4",
+            "hands": 1,
+            "rangeType": "both",
+            "rangeDistance": "close",
+            "damageType": "slashing",
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/weapons/knife.png"
+    },
+    {
+        "name": "Mace",
+        "permission": {
+            "default": 0
+        },
+        "type": "weapon",
+        "data": {
+            "description": "Blunty and bashy. A symbol of chaos.",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 25,
+            "usageDie": null,
+            "damageDice": "1d6",
+            "hands": 1,
+            "rangeType": "melee",
+            "rangeDistance": "close",
+            "damageType": "bludgeoning",
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/weapons/mace.png"
+    },
+    {
+        "name": "Shortsword",
+        "permission": {
+            "default": 0
+        },
+        "type": "weapon",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 20,
+            "usageDie": null,
+            "damageDice": "1d6",
+            "hands": 1,
+            "rangeType": "melee",
+            "rangeDistance": "close",
+            "damageType": "slashing",
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/weapons/sword-short.jpg"
+    },
+    {
+        "name": "Staff",
+        "permission": {
+            "default": 0
+        },
+        "type": "weapon",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 5,
+            "usageDie": null,
+            "damageDice": "1d6",
+            "hands": 2,
+            "rangeType": "melee",
+            "rangeDistance": "close",
+            "damageType": "bludgeoning",
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/weapons/staff.jpg"
+    },
+    {
+        "name": "Longsword",
+        "permission": {
+            "default": 0
+        },
+        "type": "weapon",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 40,
+            "usageDie": null,
+            "damageDice": "1d8",
+            "hands": 1,
+            "rangeType": "melee",
+            "rangeDistance": "close",
+            "damageType": "slashing",
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/weapons/sword-long.jpg"
+    },
+    {
+        "name": "Warhammer",
+        "permission": {
+            "default": 0
+        },
+        "type": "weapon",
+        "data": {
+            "description": "Versatile (used two-handed deals more damage).",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 30,
+            "usageDie": null,
+            "damageDice": "1d6",
+            "hands": 1,
+            "rangeType": "melee",
+            "rangeDistance": "close",
+            "damageType": "bludgeoning",
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/weapons/hammer-war.png"
+    },
+    {
+        "name": "Whip",
+        "permission": {
+            "default": 0
+        },
+        "type": "weapon",
+        "data": {
+            "description": "Strength or Agility, reach. Can be used to swing.",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 5,
+            "usageDie": null,
+            "damageDice": "1d4",
+            "hands": 1,
+            "rangeType": "melee",
+            "rangeDistance": "close",
+            "damageType": "slashing",
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/weapons/whip.png"
+    },
+    {
+        "name": "Spear",
+        "permission": {
+            "default": 0
+        },
+        "type": "weapon",
+        "data": {
+            "description": "Versatile (can be thrown)",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 20,
+            "usageDie": null,
+            "damageDice": "1d6",
+            "hands": 1,
+            "rangeType": "both",
+            "rangeDistance": "close",
+            "damageType": "piercing",
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/weapons/spear.jpg"
+    },
+    {
+        "name": "Great Sword",
+        "permission": {
+            "default": 0
+        },
+        "type": "weapon",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 2,
+                "soaps": 0
+            },
+            "silver": 150,
+            "usageDie": null,
+            "damageDice": "2d6",
+            "hands": 2,
+            "rangeType": "melee",
+            "rangeDistance": "close",
+            "damageType": "slashing",
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/weapons/sword-great.png"
+    },
+    {
+        "name": "Halberd or Polearm",
+        "permission": {
+            "default": 0
+        },
+        "type": "weapon",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 2,
+                "soaps": 0
+            },
+            "silver": 50,
+            "usageDie": null,
+            "damageDice": "1d10",
+            "hands": 2,
+            "rangeType": "melee",
+            "rangeDistance": "close",
+            "damageType": "slashing",
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/weapons/polearm.jpg"
+    },
+    {
+        "name": "Great Axe",
+        "permission": {
+            "default": 0
+        },
+        "type": "weapon",
+        "data": {
+            "description": "Beloved of barbarians.",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 2,
+                "soaps": 0
+            },
+            "silver": 80,
+            "usageDie": null,
+            "damageDice": "2d6",
+            "hands": 2,
+            "rangeType": "melee",
+            "rangeDistance": "close",
+            "damageType": "slashing",
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/weapons/axe-great.png"
+    },
+    {
+        "name": "Throwing Knives",
+        "permission": {
+            "default": 0
+        },
+        "type": "weapon",
+        "data": {
+            "description": "pair",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 20,
+            "usageDie": null,
+            "damageDice": "1d4",
+            "hands": 1,
+            "rangeType": "both",
+            "rangeDistance": "far",
+            "damageType": "piercing",
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/weapons/throwing-knives.jpg"
+    },
+    {
+        "name": "Rock",
+        "permission": {
+            "default": 0
+        },
+        "type": "weapon",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 1
+            },
+            "silver": 0,
+            "usageDie": null,
+            "damageDice": "1d3",
+            "hands": 1,
+            "rangeType": "ranged",
+            "rangeDistance": "nearby",
+            "damageType": "bludgeoning",
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkborg/icons/items/weapons/rock.jpg"
+    }
+]
