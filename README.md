@@ -27,3 +27,5 @@ Recent changes:
 3. Fixed the manifest so the system can be automatically installed/updated through foundry.
 4. Implemented draggable weapon and ability macros
 
+Update 1/9: My son was just born, so I will have to pause developing this for a bit, but should resume within a month.
+
